@@ -1,0 +1,6 @@
+Pearson's Product Moment Correlation Coefficient 
+
+
+....
+linear regression
+kurtosis

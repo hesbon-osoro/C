@@ -1,0 +1,32 @@
+structure with regular union
+
+struct {   
+char title[50];   
+char author[50];   
+union {     
+float dollars;     
+int yens;   
+} price; 
+} book; 
+
+structure with anonymous union
+
+struct { 
+char title[50];   
+char author[50];   
+union {     
+float dollars;     
+int yens;   
+}; 
+} book;
+
+The only difference between the two pieces of code is that in the first one we have given a name to the union (price) and in the second one we have not. The difference is seen when we access the members dollars and yens of an object of this type. For an object of the first type, it would be:  
+
+book.price.dollars 
+book.price.yens 
+whereas for an object of the second type, it would be:  
+
+book.dollars 
+book.yens 
+
+Once again I remind you that because it is a union and not a struct, the members dollars and yens occupy the same physical space in the memory so they cannot be used to store two different values simultaneously. You can set a value for price in dollars or in yens, but not in both.  

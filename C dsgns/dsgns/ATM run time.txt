@@ -1,0 +1,98 @@
+ENTER YOUR SECRET PIN NUMBER:1520
+********Welcome to ATM Service**************
+1. Check Balance
+2. Withdraw Cash
+3. Deposit Cash
+4. Quit
+******************?**************************?*
+ 
+Enter your choice: 1
+ 
+YOUR BALANCE IN Rs : 1000
+ 
+ 
+DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n):
+********Welcome to ATM Service**************
+1. Check Balance
+2. Withdraw Cash
+3. Deposit Cash
+4. Quit
+******************?**************************?*
+ 
+Enter your choice: 2
+ 
+ENTER THE AMOUNT TO WITHDRAW: 200
+ 
+ 
+PLEASE COLLECT CASH
+YOUR CURRENT BALANCE IS 800
+ 
+DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n):
+********Welcome to ATM Service**************
+1. Check Balance
+2. Withdraw Cash
+3. Deposit Cash
+4. Quit
+******************?**************************?*
+ 
+Enter your choice: 3
+ 
+ENTER THE AMOUNT TO DEPOSIT 5000
+YOUR BALANCE IS 5800
+ 
+ 
+DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n):
+********Welcome to ATM Service**************
+1. Check Balance
+2. Withdraw Cash
+3. Deposit Cash
+4. Quit
+******************?**************************?*
+ 
+Enter your choice: 1
+ 
+YOUR BALANCE IN Rs : 5800
+ 
+ 
+DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n):
+********Welcome to ATM Service**************
+1. Check Balance
+2. Withdraw Cash
+3. Deposit Cash
+4. Quit
+******************?**************************?*
+ 
+Enter your choice: 4
+ 
+THANK U USING ATM
+ 
+ 
+DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n):
+********Welcome to ATM Service**************
+1. Check Balance
+2. Withdraw Cash
+3. Deposit Cash
+4. Quit
+******************?**************************?*
+ 
+Enter your choice: 4
+ 
+THANK U USING ATM
+ 
+ 
+DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n):
+********Welcome to ATM Service**************
+1. Check Balance
+2. Withdraw Cash
+3. Deposit Cash
+4. Quit
+******************?**************************?*
+ 
+Enter your choice: n
+ 
+THANK U USING ATM
+ 
+ 
+DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n):
+ 
+THANKS FOR USING OUT ATM SERVICE.

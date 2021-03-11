@@ -1,0 +1,6 @@
+bool isempty() {
+   if(front < 0 || front > rear) 
+      return true;
+   else
+      return false;
+}

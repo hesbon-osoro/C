@@ -1,0 +1,16 @@
+var ezosuigenerisc = '8042c17e40c8a9d480357a7f18158122';
+__ez_func_ezosuigenerisc = function() { if(typeof ezosuigenerisc != "undefined") { var ezosuigeneriscDate = new Date(); ezosuigeneriscDate.setMonth(ezosuigeneriscDate.getMonth() + 24); __ez.ck.setByCat("ezosuigenerisc=" + ezosuigenerisc + ";expires=" + ezosuigeneriscDate.toUTCString() + ";domain="+ezdomain+";path=/",3); } };
+__ez.queue.addFunc('__ez_func_ezosuigenerisc', '__ez_func_ezosuigenerisc', null, false, ['__ezf_ezosuigenerisc'], true, false, false, false);
+
+function callezosuigenerisc() {
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "//g.ezoic.net/ezosuigenerisc.js";
+    document.body.appendChild(s);
+}
+if (window.addEventListener) {
+	window.addEventListener('load', callezosuigenerisc, false);
+} else if (window.attachEvent) {
+	window.attachEvent('onload', callezosuigenerisc);
+}

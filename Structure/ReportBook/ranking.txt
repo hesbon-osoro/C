@@ -1,0 +1,49 @@
+// CPP Code to find rank of elements 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// Function to find rank 
+void rankify(int* A , int n) { 
+
+	// Rank Vector 
+	float R[n] = {0}; 
+	
+	// Sweep through all elements in A for each 
+	// element count the number of less than and 
+	// equal elements separately in r and s. 
+	for (int i = 0; i < n; i++) { 
+		int r = 1, s = 1; 
+		
+		for (int j = 0; j < n; j++) { 
+			if (j != i && A[j] < A[i]) 
+				r += 1; 
+				
+			if (j != i && A[j] == A[i]) 
+				s += 1;	 
+		} 
+		
+		// Use formula to obtain rank 
+		R[i] = r + (float)(s - 1) / (float) 2; 
+	
+	} 
+	
+	for (int i = 0; i < n; i++) 
+		cout << R[i] << ' '; 
+
+	} 
+	
+// Driver Code 
+int main() { 
+	int A[] = {1, 2, 5, 2, 1, 25, 2}; 
+	int n = sizeof(A) / sizeof(A[0]); 
+	
+	for (int i = 0; i < n; i++) 
+	cout << A[i] << ' '; 
+	cout << '\n'; 
+	
+	rankify(A, n); 
+	
+	return 0; 
+} 
+
+// This code is contributed by Gitanjali. 

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head >
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Two dimensional (2D) arrays in C programming with example</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v8.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Two dimensional (2D) arrays in C programming with example: 2D arrays are generally known as matrix. We will discuss two Dimensional array.."/>
+<link rel="canonical" href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Two dimensional (2D) arrays in C programming with example" />
+<meta property="og:description" content="Two dimensional (2D) arrays in C programming with example: 2D arrays are generally known as matrix. We will discuss two Dimensional array.." />
+<meta property="og:url" content="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/" />
+<meta property="og:site_name" content="beginnersbook.com" />
+<meta property="article:section" content="c-programming" />
+<meta property="article:published_time" content="2014-01-14T14:09:38+00:00" />
+<meta property="article:modified_time" content="2017-09-24T05:06:53+00:00" />
+<meta property="og:updated_time" content="2017-09-24T05:06:53+00:00" />
+<meta property="og:image" content="https://beginnersbook.com/wp-content/uploads/2014/01/memory-2D-diagram.png" />
+<meta property="og:image:secure_url" content="https://beginnersbook.com/wp-content/uploads/2014/01/memory-2D-diagram.png" />
+<meta property="og:image:width" content="550" />
+<meta property="og:image:height" content="350" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Two dimensional (2D) arrays in C programming with example: 2D arrays are generally known as matrix. We will discuss two Dimensional array.." />
+<meta name="twitter:title" content="Two dimensional (2D) arrays in C programming with example" />
+<meta name="twitter:image" content="https://beginnersbook.com/wp-content/uploads/2014/01/memory-2D-diagram.png" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//beginnersbook.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="beginnersbook.com &raquo; Feed" href="https://feeds.feedburner.com/BeginnersBookFeed" />
+<link rel="alternate" type="application/rss+xml" title="beginnersbook.com &raquo; Comments Feed" href="https://beginnersbook.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="beginnersbook.com &raquo; Two dimensional (2D) arrays in C programming with example Comments Feed" href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/feed/" />
+<link rel='stylesheet' id='news-pro-theme-css'  href='https://beginnersbook.com/wp-content/themes/news-pro/style.css?ver=3.0.41' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=PT+Sans:400,700' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://beginnersbook.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type='text/javascript' src='https://beginnersbook.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://beginnersbook.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://beginnersbook.com/wp-content/themes/news-pro/js/responsive-menu.js?ver=1.0.0'></script>
+<link rel='https://api.w.org/' href='https://beginnersbook.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://beginnersbook.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://beginnersbook.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='https://beginnersbook.com/?p=4914' />
+<link rel="alternate" type="application/json+oembed" href="https://beginnersbook.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbeginnersbook.com%2F2014%2F01%2F2d-arrays-in-c-example%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://beginnersbook.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbeginnersbook.com%2F2014%2F01%2F2d-arrays-in-c-example%2F&#038;format=xml" />
+<script type="text/javascript" src="//cdn.thisiswaldo.com/static/js/3281.js"></script><style type="text/css">.site-title a { background: url(https://beginnersbook.com/wp-content/uploads/2018/11/beginnersbook_logo.png) no-repeat !important; }</style>
+<link rel="icon" href="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png" sizes="32x32" />
+<link rel="icon" href="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png" />
+<meta name="msapplication-TileImage" content="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png" />
+</head>
+<body class="post-template-default single single-post postid-4914 single-format-standard custom-header header-image sidebar-content-sidebar news-pro-green" itemscope itemtype="https://schema.org/WebPage"><div class="site-container"><header class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="https://beginnersbook.com/">beginnersbook.com</a></p></div><div class="widget-area header-widget-area"><section id="custom_html-38" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 728x90/320x50 -->
+<div id="waldo-tag-3290"></div></div></div></section>
+</div></div></header><nav class="nav-primary" aria-label="Main" itemscope itemtype="https://schema.org/SiteNavigationElement"><div class="wrap"><ul id="menu-main-menu" class="menu genesis-nav-menu menu-primary"><li id="menu-item-6105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-6105"><a href="https://beginnersbook.com" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-8976" class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8976"><a href="#" itemprop="url"><span itemprop="name">All Tutorials</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7076" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7076"><a href="https://beginnersbook.com/2013/05/servlet-tutorial/" itemprop="url"><span itemprop="name">Learn Servlet</span></a></li>
+	<li id="menu-item-5679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5679"><a href="https://beginnersbook.com/jsp-tutorial-for-beginners/" itemprop="url"><span itemprop="name">Learn JSP</span></a></li>
+	<li id="menu-item-6235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6235"><a href="https://beginnersbook.com/jsp-jstl-tutorial-jstl-functions-and-core-tags/" itemprop="url"><span itemprop="name">Learn JSTL</span></a></li>
+	<li id="menu-item-6239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6239"><a href="https://beginnersbook.com/2014/01/c-tutorial-for-beginners-with-examples/" itemprop="url"><span itemprop="name">Learn C</span></a></li>
+	<li id="menu-item-8977" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8977"><a href="https://beginnersbook.com/2017/08/c-plus-plus-tutorial-for-beginners/" itemprop="url"><span itemprop="name">Learn C++</span></a></li>
+	<li id="menu-item-8978" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8978"><a href="https://beginnersbook.com/2017/09/mongodb-tutorial/" itemprop="url"><span itemprop="name">Learn MongoDB</span></a></li>
+	<li id="menu-item-8979" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8979"><a href="https://beginnersbook.com/2018/10/xml-tutorial-learn-xml/" itemprop="url"><span itemprop="name">Learn XML</span></a></li>
+	<li id="menu-item-8992" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8992"><a href="https://beginnersbook.com/2018/03/python-tutorial-learn-programming/" itemprop="url"><span itemprop="name">Learn Python</span></a></li>
+	<li id="menu-item-6243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6243"><a href="https://beginnersbook.com/2017/02/perl-tutorial-for-beginners/" itemprop="url"><span itemprop="name">Learn Perl</span></a></li>
+</ul>
+</li>
+<li id="menu-item-5678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5678"><a href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/" itemprop="url"><span itemprop="name">Core Java</span></a></li>
+<li id="menu-item-5682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5682"><a href="https://beginnersbook.com/2013/04/oops-concepts/" itemprop="url"><span itemprop="name">OOPs</span></a></li>
+<li id="menu-item-6236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6236"><a href="https://beginnersbook.com/java-collections-tutorials/" itemprop="url"><span itemprop="name">Collections</span></a></li>
+<li id="menu-item-6237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6237"><a href="https://beginnersbook.com/java-io-tutorial-with-examples/" itemprop="url"><span itemprop="name">Java I/O</span></a></li>
+<li id="menu-item-6242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6242"><a href="https://beginnersbook.com/2015/04/json-tutorial/" itemprop="url"><span itemprop="name">JSON</span></a></li>
+<li id="menu-item-6241" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6241"><a href="https://beginnersbook.com/2015/04/dbms-tutorial/" itemprop="url"><span itemprop="name">DBMS</span></a></li>
+</ul></div></nav><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><article class="post-4914 post type-post status-publish format-standard has-post-thumbnail category-c-programming entry" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Two dimensional (2D) arrays in C programming with example</h1>
+<p class="entry-meta">By <span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span class="entry-author-name" itemprop="name">Chaitanya Singh</span></span> | <span class="entry-categories">Filed Under: <a href="https://beginnersbook.com/category/c-programming/" rel="category tag">c-programming</a></span> </p></header><div class="entry-content" itemprop="text"><p>An array of arrays is known as 2D array. The two dimensional (2D) array in <a href="https://beginnersbook.com/2014/01/c-tutorial-for-beginners-with-examples/">C programming</a> is also known as matrix. A matrix can be represented as a table of rows and columns. Before we discuss more about two Dimensional array lets have a look at the following C program.</p>
+<h2>Simple Two dimensional(2D) Array Example</h2>
+<p>For now don&#8217;t worry how to initialize a two dimensional array, we will discuss that part later. This program demonstrates how to store the elements entered by user in a 2d array and how to display the elements of a two dimensional array.</p>
+<pre>#include&lt;stdio.h&gt;
+int main(){
+   /* 2D array declaration*/
+   int disp[2][3];
+   /*Counter variables for the loop*/
+   int i, j;
+   for(i=0; i&lt;2; i++) {
+      for(j=0;j&lt;3;j++) {
+         printf("Enter value for disp[%d][%d]:", i, j);
+         scanf("%d", &amp;disp[i][j]);
+      }
+   }
+   //Displaying array elements
+   printf("Two Dimensional array elements:\n");
+   for(i=0; i&lt;2; i++) {
+      for(j=0;j&lt;3;j++) {
+         printf("%d ", disp[i][j]);
+         if(j==2){
+            printf("\n");
+         }
+      }
+   }
+   return 0;
+}</pre>
+<p>Output:</p>
+<pre>Enter value for disp[0][0]:1
+Enter value for disp[0][1]:2
+Enter value for disp[0][2]:3
+Enter value for disp[1][0]:4
+Enter value for disp[1][1]:5
+Enter value for disp[1][2]:6
+Two Dimensional array elements:
+1 2 3 
+4 5 6 
+</pre>
+<h2>Initialization of 2D Array</h2>
+<p>There are two ways to initialize a two Dimensional arrays during declaration.</p><div class="lq"><div data-type="ad" data-publisher="Beginnersbook.com" data-format="300x250" data-zone="ros" ></div></div>
+<pre>int disp[2][4] = {
+    {10, 11, 12, 13},
+    {14, 15, 16, 17}
+};</pre>
+<p>OR</p>
+<pre>int disp[2][4] = { 10, 11, 12, 13, 14, 15, 16, 17};</pre>
+<p>Although both the above declarations are valid, I recommend you to use the first method as it is more readable, because you can visualize the rows and columns of 2d array in this method.</p>
+<h4>Things that you must consider while initializing a 2D array</h4>
+<p>We already know, when we initialize a normal <a href="https://beginnersbook.com/2014/01/c-arrays-example/">array</a> (or you can say one dimensional array) during declaration, we need not to specify the size of it. However that&#8217;s not the case with 2D array, you must always specify the second dimension even if you are specifying elements during the declaration. Let&#8217;s understand this with the help of few examples –</p>
+<pre>/* Valid declaration*/
+int abc[2][2] = {1, 2, 3 ,4 }  
+/* Valid declaration*/ 
+int abc[][2] = {1, 2, 3 ,4 }  
+/* Invalid declaration – you must specify second dimension*/
+int abc[][] = {1, 2, 3 ,4 }   
+/* Invalid because of the same reason  mentioned above*/
+int abc[2][] = {1, 2, 3 ,4 }</pre>
+<h2>How to store user input data into 2D array</h2>
+<p>We can calculate how many elements a two dimensional array can have by using this formula:<br />
+The array arr[n1][n2] can have n1*n2 elements. The array that we have in the example below is having the dimensions 5 and 4. These dimensions are known as subscripts. So this array has <strong>first subscript</strong> value as 5 and <strong>second subscript</strong> value as 4.<br />
+So the array abc[5][4] can have 5*4 = 20 elements.</p>
+<p>To store the elements entered by user we are using two for loops, one of them is a nested loop. The outer loop runs from 0 to the (first subscript -1) and the inner for loops runs from 0 to the (second subscript -1). This way the the order in which user enters the elements would be abc[0][0], abc[0][1], abc[0][2]&#8230;so on.</p>
+<pre>#include&lt;stdio.h&gt;
+int main(){
+   /* 2D array declaration*/
+   int abc[5][4];
+   /*Counter variables for the loop*/
+   int i, j;
+   for(i=0; i&lt;5; i++) {
+      for(j=0;j&lt;4;j++) {
+         printf("Enter value for abc[%d][%d]:", i, j);
+         scanf("%d", &amp;abc[i][j]);
+      }
+   }
+   return 0;
+}</pre>
+<p>In above example, I have a 2D array <code>abc</code> of integer type. Conceptually you can visualize the above array like this:<br />
+<img class="aligncenter wp-image-7542 size-full" src="https://beginnersbook.com/wp-content/uploads/2014/01/2D-array-updated.png" alt="2D-array" width="500" height="500" srcset="https://beginnersbook.com/wp-content/uploads/2014/01/2D-array-updated.png 500w, https://beginnersbook.com/wp-content/uploads/2014/01/2D-array-updated-150x150.png 150w, https://beginnersbook.com/wp-content/uploads/2014/01/2D-array-updated-300x300.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></p>
+<p>However the actual representation of this array in memory would be something like this:<br />
+<img class="aligncenter size-full wp-image-7543" src="https://beginnersbook.com/wp-content/uploads/2014/01/memory-2D-diagram-updated.png" alt="memory-2D-diagram" width="550" height="350" srcset="https://beginnersbook.com/wp-content/uploads/2014/01/memory-2D-diagram-updated.png 550w, https://beginnersbook.com/wp-content/uploads/2014/01/memory-2D-diagram-updated-300x191.png 300w" sizes="(max-width: 550px) 100vw, 550px" /></p>
+<h2>Pointers &amp; 2D array</h2>
+<p>As we know that the one dimensional array name works as a pointer to the base element (first element) of the array. However in the case 2D arrays the logic is slightly different. You can consider a 2D array as collection of several one dimensional arrays.</p>
+<p><strong>So</strong> <code>abc[0]</code> would have the address of first element of the first row (if we consider the above diagram number 1).<br />
+similarly <code>abc[1]</code> would have the address of the first element of the second row. To understand it better, lets write a C program &#8211;</p>
+<pre>#include &lt;stdio.h&gt;
+int main()
+{
+   int abc[5][4] ={
+            {0,1,2,3},
+            {4,5,6,7},
+            {8,9,10,11},
+            {12,13,14,15},
+            {16,17,18,19}
+            };
+    for (int i=0; i&lt;=4; i++)
+    {
+        /* The correct way of displaying an address would be
+         * printf("%p ",abc[i]); but for the demonstration
+         * purpose I am displaying the address in int so that
+         * you can relate the output with the diagram above that
+         * shows how many bytes an int element uses and how they
+         * are stored in contiguous memory locations.
+         *
+         */
+    	printf("%d ",abc[i]);
+    }
+    return 0;
+}
+
+</pre>
+<p>Output:</p>
+<pre>1600101376 1600101392 1600101408 1600101424 1600101440</pre>
+<p>The actual address representation should be in hex for which we use %p instead of %d, as mentioned in the comments. This is just to show that the elements are stored in contiguous memory locations. You can relate the output with the diagram above to see that the difference between these addresses is actually number of bytes consumed by the elements of that row.</p>
+<p>The addresses shown in the output belongs to the first element of each row <code>abc[0][0]</code>, <code>abc[1][0]</code>, <code>abc[2][0]</code>, <code>abc[3][0]</code> and <code>abc[4][0]</code>.</p>
+<div class="bb-nav"><a class="pretut" href="https://beginnersbook.com/2014/01/c-arrays-example/">❮ Previous</a><a class="nexttut" href="https://beginnersbook.com/2014/01/c-strings-string-functions/">Next ❯</a></div>
+</p></div><footer class="entry-footer"></footer></article><div class="after-entry" class="widget-area"><section id="custom_html-41" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 728x90/300x250/320x50 --><div id="waldo-tag-3340"></div></div></div></section>
+</div><div class="entry-comments" id="comments"><h3>Comments</h3><ol class="comment-list">
+	<li class="comment even thread-even depth-1" id="comment-15294">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/0178ef8b38678c04fea44c68025eee3b?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/0178ef8b38678c04fea44c68025eee3b?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">asritha</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2014-11-13T18:15:15+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-15294" class="comment-time-link" itemprop="url">November 13, 2014 at 6:15 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>extend the topic on 2d arrays&#8230;sorting and searching</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-15294' onclick='return addComment.moveForm( "comment-15294", "15294", "respond", "4914" )' aria-label='Reply to asritha'>Reply</a></div>
+		
+	</article>
+	<ul class="children">
+
+	<li class="comment odd alt depth-2" id="comment-35172">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/afd1c3587e32848507b18eba09859e9f?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/afd1c3587e32848507b18eba09859e9f?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">ron weasely</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2015-09-10T12:01:09+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-35172" class="comment-time-link" itemprop="url">September 10, 2015 at 12:01 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>there are two types<br />
+1:linear search<br />
+2:binery search<br />
+you can search in wikipedia ,you will get extension about it.</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-35172' onclick='return addComment.moveForm( "comment-35172", "35172", "respond", "4914" )' aria-label='Reply to ron weasely'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-23754">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/16dc19c1f1f3da3688b84d89d1952e62?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/16dc19c1f1f3da3688b84d89d1952e62?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">ARSADHUSAIN</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2015-03-02T09:37:09+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-23754" class="comment-time-link" itemprop="url">March 2, 2015 at 9:37 AM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>convert image into two dimension array plzzz help</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-23754' onclick='return addComment.moveForm( "comment-23754", "23754", "respond", "4914" )' aria-label='Reply to ARSADHUSAIN'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-even depth-1" id="comment-23801">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/46fe93ea0a8302e103f9cb0e752cfc59?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/46fe93ea0a8302e103f9cb0e752cfc59?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">shraddha</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2015-03-03T05:53:51+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-23801" class="comment-time-link" itemprop="url">March 3, 2015 at 5:53 AM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>I want the code for Addition of arrays with output as array of nos. Please.</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-23801' onclick='return addComment.moveForm( "comment-23801", "23801", "respond", "4914" )' aria-label='Reply to shraddha'>Reply</a></div>
+		
+	</article>
+	<ul class="children">
+
+	<li class="comment even depth-2" id="comment-53294">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/82b34346b16fec4ddce1ca8bdf6061e5?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/82b34346b16fec4ddce1ca8bdf6061e5?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">Anonymous</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2016-04-03T15:39:17+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-53294" class="comment-time-link" itemprop="url">April 3, 2016 at 3:39 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>#include<br />
+#include<br />
+#include</p>
+<p>int main()<br />
+{<br />
+   int m, n, c, d, first[10][10], second[10][10], sum[10][10];<br />
+clrscr();<br />
+   printf(&#8220;Enter the number of rows and columns of Array(2D)\n&#8221;);<br />
+   scanf(&#8220;%d%d&#8221;, &amp;m, &amp;n);<br />
+   printf(&#8220;Enter the elements of first Array\n&#8221;);</p>
+<p>   for (c = 0; c &lt; m; c++)<br />
+      for (d = 0; d &lt; n; d++)<br />
+         scanf(&quot;%d&quot;, &amp;first[c][d]);</p>
+<p>   printf(&quot;Enter the elements of second Array\n&quot;);</p>
+<p>   for (c = 0; c &lt; m; c++)<br />
+      for (d = 0 ; d &lt; n; d++)<br />
+            scanf(&quot;%d&quot;, &amp;second[c][d]);</p>
+<p>   printf(&quot;Sum of Arrays:-\n&quot;);</p>
+<p>   for (c = 0; c &lt; m; c++) {<br />
+      for (d = 0 ; d &lt; n; d++) {<br />
+         sum[c][d] = first[c][d] + second[c][d];<br />
+         printf(&quot;%d\t&quot;, sum[c][d]);<br />
+      }<br />
+      printf(&quot;\n&quot;);<br />
+   }</p>
+<p>   getch();<br />
+}</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-53294' onclick='return addComment.moveForm( "comment-53294", "53294", "respond", "4914" )' aria-label='Reply to Anonymous'>Reply</a></div>
+		
+	</article>
+	<ul class="children">
+
+	<li class="comment odd alt depth-3" id="comment-53747">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/45846de012e79b4d7f0050f5e70987a7?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/45846de012e79b4d7f0050f5e70987a7?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">Elias Missibsa</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2016-04-16T12:22:27+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-53747" class="comment-time-link" itemprop="url">April 16, 2016 at 12:22 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>Hey;</p>
+<p>very interesting web site.<br />
+i enjoy it!</p>
+<p>thanks a lots!</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-53747' onclick='return addComment.moveForm( "comment-53747", "53747", "respond", "4914" )' aria-label='Reply to Elias Missibsa'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-23889">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/e064e738ac1236dd769a12fcc90cac78?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/e064e738ac1236dd769a12fcc90cac78?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">Rajiur Rahman</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2015-03-04T19:00:14+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-23889" class="comment-time-link" itemprop="url">March 4, 2015 at 7:00 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>How do I assign a 2-D array to a pointer ? I am getting error.</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-23889' onclick='return addComment.moveForm( "comment-23889", "23889", "respond", "4914" )' aria-label='Reply to Rajiur Rahman'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-even depth-1" id="comment-34177">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/5e02cfed9a87f85110762209ffe4b8ac?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/5e02cfed9a87f85110762209ffe4b8ac?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">raztek</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2015-09-01T22:01:57+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-34177" class="comment-time-link" itemprop="url">September 1, 2015 at 10:01 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>The figure label &#8220;2D array conceptual memory representation&#8221; has the explanation wrong because it switched the number of rows and columns.<br />
+IT should say abc[5][4] , and<br />
+There are 5 rows and 4 columns!!!</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-34177' onclick='return addComment.moveForm( "comment-34177", "34177", "respond", "4914" )' aria-label='Reply to raztek'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-38326">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/6235b4352d7ab07a20a2649d07d6cc1b?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/6235b4352d7ab07a20a2649d07d6cc1b?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">shubham teli</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2015-10-10T21:35:54+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-38326" class="comment-time-link" itemprop="url">October 10, 2015 at 9:35 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>How to create an 2d array when I dont no row and column size &amp; this value how to pass function.</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-38326' onclick='return addComment.moveForm( "comment-38326", "38326", "respond", "4914" )' aria-label='Reply to shubham teli'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-even depth-1" id="comment-64083">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/7fcb1de795163842d93d48ff123cc50e?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/7fcb1de795163842d93d48ff123cc50e?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">aisha</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2016-12-02T06:58:29+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-64083" class="comment-time-link" itemprop="url">December 2, 2016 at 6:58 AM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>create a dev c++ program where the user can insert fruits and their price and print its list.use 2 dimensional array</p>
+<p>help me for this please i really dont know how to do it</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-64083' onclick='return addComment.moveForm( "comment-64083", "64083", "respond", "4914" )' aria-label='Reply to aisha'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-65435">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/d509fcbcfb8b7ed36e149c29d11953b3?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/d509fcbcfb8b7ed36e149c29d11953b3?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">yuvasri</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2017-01-02T08:52:10+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-65435" class="comment-time-link" itemprop="url">January 2, 2017 at 8:52 AM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>i need C program to print the address of particular element in two dimensional array</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-65435' onclick='return addComment.moveForm( "comment-65435", "65435", "respond", "4914" )' aria-label='Reply to yuvasri'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-even depth-1" id="comment-68304">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/670008e671ccb826328f133d52a59dcb?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/670008e671ccb826328f133d52a59dcb?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">mohanteja</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2017-03-10T09:15:25+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-68304" class="comment-time-link" itemprop="url">March 10, 2017 at 9:15 AM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>how to scan a 2d array in matrix way on console ?<br />
+like<br />
+enter elements<br />
+  2  3  6<br />
+  4  5  6<br />
+  1  2   3</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-68304' onclick='return addComment.moveForm( "comment-68304", "68304", "respond", "4914" )' aria-label='Reply to mohanteja'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-69191">
+	<article itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+
+		
+		<header class="comment-header">
+			<p class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+				<img alt='' src='https://secure.gravatar.com/avatar/8aeea342d3ea80209fda843a234bd748?s=48&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/8aeea342d3ea80209fda843a234bd748?s=96&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' /><span itemprop="name">VK</span> <span class="says">says</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time" datetime="2017-04-03T12:10:17+00:00" itemprop="datePublished"><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/#comment-69191" class="comment-time-link" itemprop="url">April 3, 2017 at 12:10 PM</a></time></p>		</header>
+
+		<div class="comment-content" itemprop="text">
+			
+			<p>I need a program which stores a sentence in a 2D array. Can you help me with that?</p>
+		</div>
+
+		<div class="comment-reply"><a rel='nofollow' class='comment-reply-link' href='#comment-69191' onclick='return addComment.moveForm( "comment-69191", "69191", "respond", "4914" )' aria-label='Reply to VK'>Reply</a></div>
+		
+	</article>
+	</li><!-- #comment-## -->
+</ol></div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/01/2d-arrays-in-c-example/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://beginnersbook.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='4914' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e906aebff7" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="240"/></p>			</form>
+			</div><!-- #respond -->
+	</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="https://schema.org/WPSideBar"><section id="search-2" class="widget widget_search"><div class="widget-wrap"><form class="search-form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" method="get" action="https://beginnersbook.com/" role="search"><meta itemprop="target" content="https://beginnersbook.com/?s={s}"/><input itemprop="query-input" type="search" name="s" placeholder="Search this website &#x2026;" /><input type="submit" value="Search"  /></form></div></section>
+<section id="custom_html-39" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 160x600 -->
+<div id="waldo-tag-3282"></div></div></div></section>
+<section id="custom_html-40" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 160x600 -->
+<div id="waldo-tag-3292"></div></div></div></section>
+<section id="custom_html-29" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><div data-type="ad" data-publisher="Beginnersbook.com" data-format="160x600" data-zone="ros" ></div></div></div></section>
+<section id="custom_html-31" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><div data-type="ad" data-publisher="Beginnersbook.com" data-format="160x600" data-zone="ros" ></div></div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar" itemscope itemtype="https://schema.org/WPSideBar"><section id="custom_html-21" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><h4 class="widget-title widgettitle">C Programming Tutorial</h4>
+<div class="textwidget custom-html-widget"><ul>
+<li><a href="https://beginnersbook.com/2014/01/install-turbo-c/">Turbo C++  installation</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-program-structure/">First C Program</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-keywords-reserved-words/">C - Keywords</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-operator-precedence-table/">Operator precedence</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-if-statement/">C - if statement</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-if-else-statement-example/">C - if..else</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-for-loop/">C - for loop</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-while-loop/">C - while loop</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-dowhile-loop/">C - do while loop</a></li>
+
+<li><a href="https://beginnersbook.com/2014/01/c-continue-statement/">C - continue</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-break-statement/">C - break statement</a></li>
+<li><a href="https://beginnersbook.com/2014/01/switch-case-statements-in-c/">C - switch..case</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-goto-statement/">C - goto statement</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-arrays-example/">C - Arrays</a></li>
+<li><a href="https://beginnersbook.com/2014/01/2d-arrays-in-c-example/">2 D array</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-strings-string-functions/">C - String</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-functions-examples/">C - functions</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-function-call-by-reference-example/">Function call by reference</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-function-call-by-value-example/">Function call by value</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-passing-array-to-function-example/">Array to function</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-structures-examples/">C - Structures</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-pointers/">C - Pointers</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-pointer-to-pointer/">Pointer to Pointer</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-passing-pointers-to-functions/">Pointers to functions</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-function-pointers/">C - function pointers</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-pointer-to-array-example/">Pointer & Array</a></li>
+<li><a href="https://beginnersbook.com/2014/01/c-file-io/">C - File I/O</a></li>
+<li><a href="https://beginnersbook.com/2015/02/simple-c-programs/">C Programming Examples</a></li>
+</ul></div></div></section>
+<section id="text-63" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Recently Added..</h4>
+			<div class="textwidget"><ul>
+<li><a href="https://beginnersbook.com/2015/04/json-tutorial/">JSON Tutorial</a></li>
+<li><a href="https://beginnersbook.com/2014/08/java-regex-tutorial/">Java Regular Expressions Tutorial</a></li>
+<li><a href="https://beginnersbook.com/2014/09/java-enum-examples/">Java Enum Tutorial</a></li>
+<li><a href="https://beginnersbook.com/2014/09/java-annotations/">Java Annotations Tutorial</a></li>
+</ul>
+</div>
+		</div></section>
+</aside></div><footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div class="wrap"><p>Copyright © 2012 – 2018 BeginnersBook . <a href="https://beginnersbook.com/privacy/">Privacy Policy</a> . <a href="https://beginnersbook.com/sitemap_index.xml" title="Sitemap">Sitemap</a></p></div></footer></div><script type="text/javascript" src="https://beginnersbook.com/highlighter/prettify.js"></script>
+<script type="text/javascript" charset="utf-8">
+jQuery(document).ready(function($) {
+       $('pre').addClass("prettyprint");
+       prettyPrint();
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35249844-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type='text/javascript'>
+function _dmBootstrap(file) {
+    var _dma = document.createElement('script');
+    _dma.type = 'text/javascript';
+    _dma.async = true;
+    _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+}
+function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+(function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script><script type='text/javascript' src='https://beginnersbook.com/wp-includes/js/comment-reply.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://beginnersbook.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+<script async="async" type='text/javascript' src='https://beginnersbook.com/wp-content/plugins/akismet/_inc/form.js?ver=4.0.8'></script>
+</body></html>

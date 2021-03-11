@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="description" content="A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.">
+<link rel="shortcut icon" href="/gfg.png" type="image/x-icon" />
+
+<meta name="theme-color" content="#0f9d58" />
+
+<meta property="og:image" content="https://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="200">
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+
+<title>C Programming Language - GeeksforGeeks</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="" />
+<!--[if lt IE 9]>
+<script src="https://www.geeksforgeeks.org/wp-content/themes/iconic-one/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "GeeksforGeeks",
+        "url" : "https://www.geeksforgeeks.org/",
+        "logo" : "https://www.geeksforgeeks.org/gfgLogo.png",
+        "description" : "A computer science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.",
+        "founder": [
+            {
+                "@type" : "Person",
+                "name" : "Sandeep Jain",
+                "url" : "https://in.linkedin.com/in/sandeep-jain-b3940815"
+            }
+        ],
+        "sameAs" : [ "https://www.facebook.com/geeksforgeeks.org/",
+            "https://twitter.com/geeksforgeeks",
+            "https://www.linkedin.com/company/1299009",
+            "https://www.youtube.com/geeksforgeeksvideos/"
+        ]
+    }
+</script>
+<script>
+
+    var arrPostCat = new Array();
+        var tIds = "";
+    var domain = 1;
+    var arrPost = new Array();
+    var post_id = "24966";
+    var post_type = "page";
+    var post_slug = window.location.href;
+    var ip = "34.195.252.2";
+    var post_title = "C Programming Language";
+    var post_status = "publish";
+                            var isAdminLoggedIn = 0;
+        </script>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.geeksforgeeks.org/c-programming-language/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="C Programming Language - GeeksforGeeks" />
+<meta property="og:description" content="Recent Articles on C ! C Output &#038; Multiple Choice Questions Basics, Variable Declaration, Definition and Scope, Data Types, Storage Classes, Input/Output, Operators, Preprocessor, Array… Read More &raquo;" />
+<meta property="og:url" content="https://www.geeksforgeeks.org/c-programming-language/" />
+<meta property="og:site_name" content="GeeksforGeeks" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.geeksforgeeks.org\/","sameAs":[],"@id":"https:\/\/www.geeksforgeeks.org\/#organization","name":"GeeksforGeeks","logo":"http:\/\/www.cdn.geeksforgeeks.org\/wp-content\/uploads\/gfg_200X200-1.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//www.geeksforgeeks.org' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="GeeksforGeeks &raquo; Feed" href="https://www.geeksforgeeks.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="GeeksforGeeks &raquo; Comments Feed" href="https://www.geeksforgeeks.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="GeeksforGeeks &raquo; C Programming Language Comments Feed" href="https://www.geeksforgeeks.org/c-programming-language/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.geeksforgeeks.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='themonic-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto:400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css'  href='https://www.geeksforgeeks.org/wp-content/themes/iconic-one/css/gfg.min.css?ver=5.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.geeksforgeeks.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.geeksforgeeks.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gfgObject = {"authUrl":"https:\/\/auth.geeksforgeeks.org\/","contributeUrl":"https:\/\/contribute.geeksforgeeks.org\/","utilUrl":"https:\/\/util.geeksforgeeks.org\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.geeksforgeeks.org/wp-content/themes/iconic-one/js/gfg.min.js?ver=10.9'></script>
+<link rel='https://api.w.org/' href='https://www.geeksforgeeks.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cdn.geeksforgeeks.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.cdn.geeksforgeeks.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='https://www.geeksforgeeks.org/?p=24966' />
+<link rel="alternate" type="application/json+oembed" href="https://www.geeksforgeeks.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fc-programming-language%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.geeksforgeeks.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fc-programming-language%2F&#038;format=xml" />
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script>
+        window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+              "background": "#3c404d",
+              "text": "#d6d6d6"
+            },
+            "button": {
+              "background": "#8bed4f"
+            }
+          },
+          "theme": "classic",
+            onStatusChange: function(status) {
+            
+            },
+            law: {
+              regionalLaw: false,
+            },
+            location: true,
+            "content": {
+            "message": "We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our <a href=\"https://www.geeksforgeeks.org/cookie-policy/\" class=\"cc-link\" target=\"_blank\">Cookie Policy</a> & ",
+            "link": "Privacy Policy",
+            "href": "/privacy-policy/"
+            },
+        cookie: {
+        name : "geeksforgeeks_consent_status",
+        }
+        })});
+    
+        </script>
+    <style>
+#wpadminbar{
+background: #ff0000 !important;
+}
+</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<link rel="icon" href="https://www.cdn.geeksforgeeks.org/wp-content/uploads/gfg_200X200-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://www.cdn.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.cdn.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png" />
+<meta name="msapplication-TileImage" content="https://www.cdn.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png" />
+
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/27823234/SP', [300, 250], 'div-gpt-ad-1458112424022-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+</head>
+
+<body class="page-template-default page page-id-24966 custom-background custom-background-white custom-font-enabled">
+
+<div id="page" style="position:relative;overflow: unset;z-index:2;" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<div style="margin-bottom: 5px;">	
+		<div class="upper-header">
+            <div id="container-g4g-header">
+                <div id="MasterHead">
+                    <div class="header-gfg-logo">
+                                    <a href="https://www.geeksforgeeks.org/" title="GeeksforGeeks" rel="home"><img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png" alt="GeeksforGeeks"></a>
+
+                            </div>
+
+     <span class="responsive-custom-search">
+    <script>
+      (function() {
+        var cx = '009682134359037907028:tj6eafkv_be';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
+    </span>
+
+                    <div class = "buttonsProfileSide">
+                        <div class="masterhead-buttons">
+                               
+                                <a class="login-modal-btn ButtonContribute" href="https://contribute.geeksforgeeks.org/request-article/request-article.php" style="margin-bottom:5px;">Suggest a Topic</a>
+                                <a class="login-modal-btn ButtonContribute" href="https://contribute.geeksforgeeks.org/wp-admin/post-new.php">Write an Article</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+
+<div id="profile" style="float: right; margin-top: -1%;margin-right:1%;"></div>
+</div>
+</div>
+
+		
+		
+		<nav id="site-navigation" class="themonic-nav" role="navigation">
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-iconic-container"><ul id="menu-top" class="nav-menu"><li id="menu-item-147519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147519"><a href="/"><img style="width: 30px;vertical-align: middle;" src="https://www.geeksforgeeks.org/wp-content/uploads/gfg_transparent_white_small.png"></a></li>
+<li id="menu-item-141975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-141975"><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms/">Algo ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-135030" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135030"><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms/#AnalysisofAlgorithms">Analysis of Algorithms</a></li>
+	<li id="menu-item-146823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-146823"><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms/">Topicwise ►</a>
+	<ul class="sub-menu">
+		<li id="menu-item-147774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147774"><a href="http://www.geeksforgeeks.org/searching-algorithms/">Searching Algorithms</a></li>
+		<li id="menu-item-147773" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147773"><a href="http://www.geeksforgeeks.org/sorting-algorithms/">Sorting Algorithms</a></li>
+		<li id="menu-item-135041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135041"><a href="http://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">Graph Algorithms</a></li>
+		<li id="menu-item-135040" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135040"><a href="http://www.geeksforgeeks.org/bitwise-algorithms/">Bit Algorithms</a></li>
+		<li id="menu-item-135034" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135034"><a href="https://www.geeksforgeeks.org/algorithms-gq/pattern-searching/">Pattern Searching</a></li>
+		<li id="menu-item-135038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135038"><a href="http://www.geeksforgeeks.org/geometric-algorithms/">Geometric Algorithms</a></li>
+		<li id="menu-item-135039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135039"><a href="http://www.geeksforgeeks.org/mathematical-algorithms/">Mathematical Algorithms</a></li>
+		<li id="menu-item-135042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135042"><a href="http://www.geeksforgeeks.org/randomized-algorithms/">Randomized Algorithms</a></li>
+		<li id="menu-item-156520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156520"><a href="https://www.geeksforgeeks.org/game-theory/">Game Theory</a></li>
+	</ul>
+</li>
+	<li id="menu-item-146824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-146824"><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms/">Algorithm Paradigms ►</a>
+	<ul class="sub-menu">
+		<li id="menu-item-135032" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135032"><a href="http://www.geeksforgeeks.org/greedy-algorithms/">Greedy Algorithms</a></li>
+		<li id="menu-item-135033" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135033"><a href="http://www.geeksforgeeks.org/dynamic-programming/">Dynamic Programming</a></li>
+		<li id="menu-item-135037" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135037"><a href="http://www.geeksforgeeks.org/divide-and-conquer/">Divide and Conquer</a></li>
+		<li id="menu-item-135036" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135036"><a href="http://www.geeksforgeeks.org/backtracking-algorithms/">Backtracking</a></li>
+		<li id="menu-item-137933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137933"><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms/#BranchandBound">Branch &#038; Bound</a></li>
+	</ul>
+</li>
+	<li id="menu-item-146911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146911"><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms/">All Algorithms</a></li>
+</ul>
+</li>
+<li id="menu-item-142016" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-142016"><a href="http://www.geeksforgeeks.org/data-structures/">DS  ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-135054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135054"><a href="http://www.geeksforgeeks.org/array-data-structure/">Array</a></li>
+	<li id="menu-item-135045" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135045"><a href="http://www.geeksforgeeks.org/data-structures/linked-list/">LinkedList</a></li>
+	<li id="menu-item-135046" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135046"><a href="http://www.geeksforgeeks.org/stack-data-structure/">Stack</a></li>
+	<li id="menu-item-135047" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135047"><a href="http://www.geeksforgeeks.org/queue-data-structure/">Queue</a></li>
+	<li id="menu-item-146827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-146827"><a href="http://www.geeksforgeeks.org/data-structures/">Tree based DS ►</a>
+	<ul class="sub-menu">
+		<li id="menu-item-135048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135048"><a href="http://www.geeksforgeeks.org/binary-tree-data-structure/">Binary Tree</a></li>
+		<li id="menu-item-135049" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135049"><a href="http://www.geeksforgeeks.org/binary-search-tree-data-structure/">Binary Search Tree</a></li>
+		<li id="menu-item-135050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135050"><a href="http://www.geeksforgeeks.org/heap-data-structure/">Heap</a></li>
+	</ul>
+</li>
+	<li id="menu-item-135051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135051"><a href="http://www.geeksforgeeks.org/hashing-data-structure/">Hashing</a></li>
+	<li id="menu-item-135052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135052"><a href="http://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">Graph</a></li>
+	<li id="menu-item-135053" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135053"><a href="http://www.geeksforgeeks.org/advanced-data-structures/">Advanced Data Structure</a></li>
+	<li id="menu-item-135055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135055"><a href="http://www.geeksforgeeks.org/matrix/">Matrix</a></li>
+	<li id="menu-item-147716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147716"><a href="http://www.geeksforgeeks.org/string-data-structure/">Strings</a></li>
+	<li id="menu-item-135056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135056"><a href="http://www.geeksforgeeks.org/data-structures/">All Data Structures</a></li>
+</ul>
+</li>
+<li id="menu-item-147478" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-147478"><a href="http://www.geeksforgeeks.org/category/program-output/">Languages ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-135006" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-24966 current_page_item menu-item-135006"><a href="https://www.geeksforgeeks.org/c-programming-language/">C</a></li>
+	<li id="menu-item-135007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135007"><a href="https://www.geeksforgeeks.org/c-plus-plus/">C++</a></li>
+	<li id="menu-item-135012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135012"><a href="https://www.geeksforgeeks.org/java/">Java</a></li>
+	<li id="menu-item-137004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137004"><a href="https://www.geeksforgeeks.org/python-programming-language/">Python</a></li>
+	<li id="menu-item-135016" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135016"><a href="http://www.geeksforgeeks.org/sql-tutorial/">SQL</a></li>
+	<li id="menu-item-182096" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-182096"><a href="https://www.geeksforgeeks.org/php/">PHP</a></li>
+	<li id="menu-item-188679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188679"><a href="https://www.geeksforgeeks.org/javascript-tutorial/">Javascript</a></li>
+	<li id="menu-item-140854" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140854"><a title="http://www.geeksforgeeks.org/category/program-output/" href="https://www.geeksforgeeks.org/category/program-output/">Program Output</a></li>
+</ul>
+</li>
+<li id="menu-item-142017" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-142017"><a href="http://www.geeksforgeeks.org/about/interview-corner/">Interview  ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-141326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141326"><a href="https://www.geeksforgeeks.org/company-preparation/">Company Prep</a></li>
+	<li id="menu-item-137171" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137171"><a href="http://www.geeksforgeeks.org/interview-preparation-for-software-developer/">Top Topics</a></li>
+	<li id="menu-item-137172" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137172"><a href="https://practice.geeksforgeeks.org/company-tags">Practice Company Questions</a></li>
+	<li id="menu-item-137173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137173"><a href="http://www.geeksforgeeks.org/about/interview-corner/">Interview Experiences</a></li>
+	<li id="menu-item-137174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137174"><a href="https://www.geeksforgeeks.org/experienced-interview-experiences-company-wise/">Experienced Interviews</a></li>
+	<li id="menu-item-137175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137175"><a href="https://www.geeksforgeeks.org/internship-interview-experiences-company-wise/">Internship Interviews</a></li>
+	<li id="menu-item-137176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137176"><a href="http://www.geeksforgeeks.org/category/competitive-programming/">Competitive Programming</a></li>
+	<li id="menu-item-147581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147581"><a href="http://www.geeksforgeeks.org/software-design-patterns/">Design Patterns</a></li>
+	<li id="menu-item-137186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137186"><a href="http://geeksquiz.com/quiz-corner/">Multiple Choice Quizzes</a></li>
+</ul>
+</li>
+<li id="menu-item-137178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-137178"><a href="http://www.geeksforgeeks.org/student-corner/">Students  ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-137183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137183"><a href="http://www.geeksforgeeks.org/campus-ambassador-program-by-geeksforgeeks/">Campus Ambassador Program</a></li>
+	<li id="menu-item-204869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-204869"><a href="https://www.geeksforgeeks.org/computer-science-projects/">Project</a></li>
+	<li id="menu-item-137179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137179"><a href="http://www.geeksforgeeks.org/geek-of-the-month/">Geek of the Month</a></li>
+	<li id="menu-item-137570" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137570"><a href="http://geeksquiz.com/placements/">Placement Course</a></li>
+	<li id="menu-item-137180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137180"><a href="http://www.geeksforgeeks.org/category/competitive-programming/">Competitive Programming</a></li>
+	<li id="menu-item-137181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137181"><a href="http://www.geeksforgeeks.org/testimonials/">Testimonials</a></li>
+	<li id="menu-item-138863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-138863"><a href="http://www.geeksforgeeks.org/category/geek-on-the-top/">Geek on the Top</a></li>
+	<li id="menu-item-141974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141974"><a href="http://www.geeksforgeeks.org/careers/">Careers</a></li>
+	<li id="menu-item-137378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137378"><a href="http://www.geeksforgeeks.org/internship/">Internship</a></li>
+	<li id="menu-item-147457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147457"><a href="http://www.geeksforgeeks.org/school-programming/">School Programming</a></li>
+</ul>
+</li>
+<li id="menu-item-146712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-146712"><a href="https://www.geeksforgeeks.org/gate-cs-notes-gq/">GATE ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-146714" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146714"><a href="http://www.geeksforgeeks.org/gate-cs-notes-gq/">GATE Notes</a></li>
+	<li id="menu-item-146713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146713"><a href="http://www.geeksforgeeks.org/gate-corner-2-gq/">GATE CS Corner</a></li>
+	<li id="menu-item-146715" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146715"><a href="http://www.geeksforgeeks.org/lmns-gq/">Last Minute Notes</a></li>
+	<li id="menu-item-146717" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146717"><a href="https://www.geeksforgeeks.org/gate-cs-2019-important-dates-and-links/">GATE 2019</a></li>
+	<li id="menu-item-146716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146716"><a href="http://www.geeksforgeeks.org/original-gate-previous-year-question-papers-cse-and-it-gq/">GATE Official Papers</a></li>
+	<li id="menu-item-211326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-211326"><a href="https://www.geeksforgeeks.org/isro-cs-preparation/">ISRO CS Exam</a></li>
+	<li id="menu-item-211327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-211327"><a href="https://www.geeksforgeeks.org/ugc-net-cs-preparation/">UGC NET Papers</a></li>
+	<li id="menu-item-211328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-211328"><a href="https://www.geeksforgeeks.org/ugc-net-cs-notes-according-to-syllabus-of-paper-ii/">UGC NET CS Paper II</a></li>
+	<li id="menu-item-215230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215230"><a href="https://www.geeksforgeeks.org/ugc-net-cs-notes-according-to-syllabus-of-paper-iii-core-group/">UGC NET CS Paper III</a></li>
+</ul>
+</li>
+<li id="menu-item-146718" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-146718"><a href="http://www.geeksforgeeks.org/articles-on-computer-science-subjects-gq/">CS Subjects ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-203861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-203861"><a href="https://www.geeksforgeeks.org/gate-cs-notes-gq/">Core Subjects  ►</a>
+	<ul class="sub-menu">
+		<li id="menu-item-146727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146727"><a href="http://www.geeksforgeeks.org/engineering-mathematics-tutorials/">Engg. Mathematics</a></li>
+		<li id="menu-item-146729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146729"><a href="http://www.geeksforgeeks.org/operating-systems/">Operating Systems</a></li>
+		<li id="menu-item-146721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146721"><a href="http://www.geeksforgeeks.org/computer-network-tutorials/">Computer Networks</a></li>
+		<li id="menu-item-146724" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146724"><a href="http://www.geeksforgeeks.org/dbms/">DBMS</a></li>
+		<li id="menu-item-146720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146720"><a href="http://www.geeksforgeeks.org/compiler-design-tutorials/">Compiler Design</a></li>
+		<li id="menu-item-146730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146730"><a href="http://www.geeksforgeeks.org/theory-of-computation-automata-tutorials/">Theory of Computation</a></li>
+		<li id="menu-item-146726" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146726"><a href="http://www.geeksforgeeks.org/digital-electronics-logic-design-tutorials/">Digital Electronics</a></li>
+		<li id="menu-item-146722" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146722"><a href="http://www.geeksforgeeks.org/computer-organization-and-architecture-tutorials/">Computer Organization &#038; Architecture</a></li>
+		<li id="menu-item-213498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-213498"><a href="https://www.geeksforgeeks.org/software-engineering/">Software Engineering</a></li>
+		<li id="menu-item-200760" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-200760"><a href="https://www.geeksforgeeks.org/microprocessor-tutorials/">Microprocessor</a></li>
+	</ul>
+</li>
+	<li id="menu-item-147831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147831"><a href="http://www.geeksforgeeks.org/web-technology/">Web Technology</a></li>
+	<li id="menu-item-147512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147512"><a href="http://www.geeksforgeeks.org/advanced-computer-subjects-tutorials/">Advanced Topics</a></li>
+	<li id="menu-item-203862" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-203862"><a href="https://www.geeksforgeeks.org/machine-learning/">Machine Learning</a></li>
+	<li id="menu-item-204870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-204870"><a href="https://www.geeksforgeeks.org/computer-graphics-2/">Computer Graphics</a></li>
+	<li id="menu-item-146725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146725"><a href="http://www.geeksforgeeks.org/category/geeksquiz/articles-gq/difference-gq/">What&#8217;s Difference?</a></li>
+</ul>
+</li>
+<li id="menu-item-140855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-140855"><a href="http://quiz.geeksforgeeks.org/quiz-corner/">Quizzes ▼</a>
+<ul class="sub-menu">
+	<li id="menu-item-146748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-146748"><a href="http://www.geeksforgeeks.org/quizzes-on-programming-languages-gq/">Languages ►</a>
+	<ul class="sub-menu">
+		<li id="menu-item-146743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146743"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#C%20Programming%20Mock%20Tests">C</a></li>
+		<li id="menu-item-146745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146745"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#C++%20Programming%20Mock%20Tests">C++</a></li>
+		<li id="menu-item-146746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146746"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Java%20Programming%20Mock%20Tests">Java</a></li>
+		<li id="menu-item-146747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146747"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Python%20Programming%20Mock%20Tests">Python</a></li>
+	</ul>
+</li>
+	<li id="menu-item-146825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-146825"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Data%20Structures%20Mock%20Tests">CS Subjectwise ►</a>
+	<ul class="sub-menu">
+		<li id="menu-item-146731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146731"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Data%20Structures%20Mock%20Tests">Data Structures</a></li>
+		<li id="menu-item-146732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146732"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Algorithms%20Mock%20Tests">Algorithms</a></li>
+		<li id="menu-item-146733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146733"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Operating%20Systems%20Mock%20Tests">Operating Systems</a></li>
+		<li id="menu-item-146734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146734"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#DBMS%20Mock%20Tests">DBMS</a></li>
+		<li id="menu-item-146735" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146735"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Compiler%20Design%20Mock%20Tests">Compiler Design</a></li>
+		<li id="menu-item-146736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146736"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Computer%20Networks%20Mock%20Tests">Computer Networks</a></li>
+		<li id="menu-item-146737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146737"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Theory%20of%20Computation%20Mock%20Tests">Theory of Computation</a></li>
+		<li id="menu-item-146738" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146738"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Computer%20Organization%20and%20Architecture">Computer Organization</a></li>
+		<li id="menu-item-146739" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146739"><a href="http://www.geeksforgeeks.org/software-engineering-gq/">Software Engineering</a></li>
+	</ul>
+</li>
+	<li id="menu-item-146740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146740"><a href="http://www.geeksforgeeks.org/html-and-xml-gq/">HTML &#038; XML</a></li>
+	<li id="menu-item-146741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146741"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Engineering%20Mathematics">Engg. Mathematics</a></li>
+	<li id="menu-item-146742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146742"><a href="http://www.geeksforgeeks.org/quiz-corner-gq/#Aptitude%20Mock%20Tests">Aptitude</a></li>
+</ul>
+</li>
+<li id="menu-item-135367" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-135367"><a href="https://www.geeksforgeeks.org/category/guestblogs/">GBlog</a></li>
+<li id="menu-item-141885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141885"><a href="http://www.geeksforgeeks.org/puzzles/">Puzzles</a></li>
+<li id="menu-item-141816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-141816"><a href="https://practice.geeksforgeeks.org/courses/">Courses</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+		<div class="clear"></div>
+	</header><!-- #masthead -->
+<button id="scrollTopBtn" title="Scroll to Top" type="button" class="btn btn-success">&#x25B2;</button>
+	<div id="main" class="wrapper">
+<div class="leftSideBarParent">
+    <div class="leftSideBar">
+        <ul class="leftBarList"><li><a href="https://www.geeksforgeeks.org/internship/">Internships @ GeeksforGeeks</a></li>
+<li><a href="https://practice.geeksforgeeks.org/">Coding Practice</a></li>
+<li><a href="http://www.geeksforgeeks.org/write-interview-experience/">How to write an Interview Experience?</a></li>
+<li><a href="http://www.geeksforgeeks.org/must-coding-questions-company-wise/">Must Do Coding Questions Company-wise</a></li>
+<li><a href="http://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/">Must Do Coding Questions Topic-wise</a></li>
+<li><a href="http://www.geeksforgeeks.org/basic/">Basic</a></li>
+<li><a href="http://www.geeksforgeeks.org/easy/">Easy</a></li>
+<li><a href="http://www.geeksforgeeks.org/medium/">Medium</a></li>
+<li><a href="http://www.geeksforgeeks.org/hard/">Hard</a></li>
+<li><a href="http://www.geeksforgeeks.org/expert/">Expert</a></li>
+<li><a href="http://www.geeksforgeeks.org/a-complete-step-by-step-guide-for-placement-preparation-by-geeksforgeeks/">Step by Step Preparation</a></li>
+<li><a href="http://www.geeksforgeeks.org/company-preparation/">Company Preparation</a></li>
+<li><a href="http://www.geeksforgeeks.org/interview-preparation-for-software-developer/">Top Topics</a></li>
+<li><a href="https://practice.geeksforgeeks.org/company-tags">Company Specific Practice</a></li>
+<li><a href="http://www.geeksforgeeks.org/software-design-patterns/">Software Design Patterns</a></li>
+<li><a href="http://www.geeksforgeeks.org/placements-gq/">Placements Preparation Course</a></li>
+<li><a href="http://www.geeksforgeeks.org/company-interview-corner/">Interview Corner</a></li>
+<li><a href="http://www.geeksforgeeks.org/category/interview-experiences/">Recent Interview Experiences</a></li>
+<li><a href="http://www.geeksforgeeks.org/geeksquiz-home/">GQ Home Page</a></li>
+<li><a href="http://www.geeksforgeeks.org/quiz-corner-gq/">Quiz Corner</a></li>
+<li><a href="http://www.geeksforgeeks.org/lmns-gq/">LMNs</a></li>
+<li><a href="https://practice.geeksforgeeks.org/recent.php?ref=home">What's New ?</a></li>
+<li><a href="https://practice.geeksforgeeks.org/ranking.php?ref=home">Leaderboard !!</a></li>
+<li><a href="https://practice.geeksforgeeks.org/topic-tags/?ref=home">Topic-wise Practice</a></li>
+<li><a href="https://practice.geeksforgeeks.org/subjective-page.php?ref=home">Subjective Problems</a></li>
+<li><a href="https://practice.geeksforgeeks.org/School/0/0/?ref=home">Difficulty Level - School</a></li>
+<li><a href="https://practice.geeksforgeeks.org/Basic/0/0/?ref=home">Difficulty Level - Basic</a></li>
+<li><a href="https://practice.geeksforgeeks.org/Easy/0/0/?ref=home">Difficulty Level - Easy</a></li>
+<li><a href="https://practice.geeksforgeeks.org/Medium/0/0/?ref=home">Difficulty Level - Medium</a></li>
+<li><a href="https://practice.geeksforgeeks.org/Hard/0/0/?ref=home">Difficulty Level - Hard</a></li>
+<li><a href="https://practice.geeksforgeeks.org/pickACategory.php?ref=home">How to pick a difficulty level?</a></li>
+<li><a href="https://practice.geeksforgeeks.org/?ref=home">Explore More...</a></li>
+<li><a href="http://www.geeksforgeeks.org/c/">C</a></li>
+<li><a href="http://www.geeksforgeeks.org/c-plus-plus/">C++</a></li>
+<li><a href="http://www.geeksforgeeks.org/java/">Java</a></li>
+<li><a href="http://www.geeksforgeeks.org/python/">Python</a></li>
+<li><a href="http://www.geeksforgeeks.org/sql-tutorial/">SQL</a></li>
+<li><a href="https://www.geeksforgeeks.org/php/">PHP</a></li>
+<li><a href="https://www.cdn.geeksforgeeks.org/javascript-tutorial/">JavaScript</a></li>
+<li><a href="http://www.geeksforgeeks.org/school-programming/">School Programming</a></li>
+<li><a href="http://www.geeksforgeeks.org/operating-systems/">Operating Systems</a></li>
+<li><a href="http://www.geeksforgeeks.org/dbms/">DBMS</a></li>
+<li><a href="http://www.geeksforgeeks.org/computer-network-tutorials/">Computer Networks</a></li>
+<li><a href="http://www.geeksforgeeks.org/engineering-mathematics-tutorials/">Engineering Mathematics</a></li>
+<li><a href="http://www.geeksforgeeks.org/category/design-pattern/">Design Patterns</a></li>
+<li><a href="http://www.geeksforgeeks.org/category/puzzles/">Common Interview Puzzles</a></li>
+<li><a href="http://www.geeksforgeeks.org/web-technology/">Web Technology</a></li>
+<li><a href="http://www.geeksforgeeks.org/category/gfact/">G-Facts</a></li>
+<li><a href="http://www.geeksforgeeks.org/tag/computer-graphics/">Computer Graphics</a></li>
+<li><a href="http://www.geeksforgeeks.org/image-processing/">Image Processing</a></li>
+<li><a href="http://www.geeksforgeeks.org/category/project/">Project Ideas</a></li>
+</ul>
+<div class="promotional" style="margin-top:15px;"><a target="_blank" href="https://www.geeksforgeeks.org/the-technical-scripter-event-by-geeksforgeeks-2/"><img style="width: 100%;" src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/VerticalAdBanner-min.png"></a></div><div class="promotional" style="margin-top:15px;max-width:300px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- GfG-LeftBar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9465609616171866"
+     data-ad-slot="1800357638"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>    </div>
+</div>
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+							
+	<article id="post-24966" class="post-24966 page type-page status-publish hentry">
+		<div class="entry-content">
+		<header class="entry-header">
+			<h1 class="entry-title" style="display:inline">C Programming Language</h1>
+		</header>
+			<div hideAd="auto"></div>
+<p><a href="https://www.geeksforgeeks.org/category/c/"><strong>Recent Articles on C !</strong></a><br />
+<strong><a href="https://www.geeksforgeeks.org/c-multiple-choice-questions/">C Output &#038; Multiple Choice Questions</a></strong></p>
+<p><a href="#Basics">Basics</a>,   <a href="#VariableDeclarationDefinitionandScope">Variable Declaration, Definition and Scope</a>,   <a href="#DataTypes">Data Types</a>,   <a href="#StorageClasses">Storage Classes</a>,   <a href="#InputOutput">Input/Output</a>,   <a href="#Operators">Operators</a>,   <a href="#Preprocessor">Preprocessor</a>,   <a href="#Array&amp;Strings">Array &amp; Strings</a>,   <a href="#ControlStatements">Control Statements</a>,   <a href="#Functions">Functions</a>,   <a href="#Pointers">Pointers</a>,   <a href="#EnumStructandUnion">Enum, Struct and Union</a>,   <a href="#MemoryManagement">Memory Management</a>,   <a href="#FileHandling">File Handling</a>,   <a href="#Puzzles">Puzzles</a>,   <a href="#Misc">Misc</a>,   <a href="#CLanguageInterviewQuestions">C Language Interview Questions</a>, <a href="https://www.geeksforgeeks.org/c-multiple-choice-questions/">Multiple Choice Questions</a></p>
+<div style="width: 50%; float: left;">
+<p style="text-align: center;"><strong><a name="Basics"></a>Basics: </strong></p>
+<div class = "Basics">
+<ol>
+<li><a href="http://geeksquiz.com/c-language-set-1-introduction/" target="_blank">C Language Introduction</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-programming-language-standard/">C Programming Language Standard</a></li>
+<li><a href="https://www.geeksforgeeks.org/int-1-sign-bit-31-data-bits-keyword-in-c/" rel="noopener" target="_blank">int (1 sign bit + 31 data bits) keyword in C</a>
+<li><a href="https://www.geeksforgeeks.org/fine-write-void-main-cc/">Is it fine to write “void main()” or “main()” in C/C++?</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-int-main-int-mainvoid/">Difference between “int main()” and “int main(void)” in C/C++?</a></li>
+<li><a href="https://www.geeksforgeeks.org/interesting-facts-preprocessors-c/" target="_blank">Macros and Preprocessors in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/" target="_blank">Compiling a C program:- Behind the Scenes</a></li>
+<li><a href="https://www.geeksforgeeks.org/benefits-c-language-programming-languages/">Benefits of C over other languages</a></li>
+<li><a href="https://www.geeksforgeeks.org/program-error-signals/" rel="noopener" target="_blank">Program error signals</a>
+<li><a href="https://www.geeksforgeeks.org/escape-sequences-c/">Escape sequences in C<a></li>
+<li><a href="https://www.geeksforgeeks.org/line-splicing-in-c-cpp/">Line Slicing in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/cc-tokens/">C/ C++ Tokens</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="VariableDeclarationDefinitionandScope"></a>Variable Declaration, Definition and Scope</strong>:</p>
+<br/>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- post_top_responsive -->
+          <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-9465609616171866"
+          data-ad-slot="4501693235"
+          data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <br/>
+            
+<div class="VariableDeclarationDefinitionandScope">
+<ol>
+<li><a title="Permalink to Variables and Keywords in C" href="http://geeksquiz.com/variables-and-keywords-in-c/">Variables and Keywords in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-16/">How are variables scoped in C – Static or Dynamic?</a></li>
+<li><a href="https://www.geeksforgeeks.org/scope-rules-in-c/">Scope rules in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-linkers-resolve-multiply-defined-global-symbols/">How Linkers Resolve Multiply Defined Global Symbols?</a></li>
+<li><a href="http://geeksquiz.com/c-language-2/variable-declaration-and-scope/" target="_blank">Quiz on Variable Declaration and Scope</a></li>
+<li><a href="https://www.geeksforgeeks.org/complicated-declarations-in-c/">Complicated declarations in C</a></li>
+<li><a title="Permalink to G-Fact 19 (Redeclaration of global variable in C)" href="https://www.geeksforgeeks.org/g-fact-19-redeclaration-of-global-variable-in-c/" rel="bookmark">Redeclaration of global variable in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/internal-linkage-external-linkage-c/">Internal and External Linkage</a></li>
+<li><a href="https://www.geeksforgeeks.org/different-ways-declare-variable-constant-c-c/">Declare variable as constant</a></li>
+<li><a href="https://www.geeksforgeeks.org/variable-name-not-start-numbers-c/">Why variables doesn&#8217;t start with numbers</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-19-redeclaration-of-global-variable-in-c/">Redeclaration of global variables</a></li>
+<li><a href="https://www.geeksforgeeks.org/initialization-global-static-variables-c/">Initialization of global and static variables</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="DataTypes"></a>Data Types: </strong></p>
+<div class="DataTypes">
+<ol>
+<li><a title="Permalink to Data Types in C" href="http://geeksquiz.com/data-types-in-c/">Data Types in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-94/">Use of bool in C</a></li>
+<li><a title="Permanent link to Integer Promotions in C" href="https://www.geeksforgeeks.org/integer-promotions-in-c/" rel="bookmark">Integer Promotions in C</a></li>
+<li><a href="http://geeksquiz.com/c-language-2/data-types/" target="_blank">Quiz on Data Types in C</a></li>
+<li><a title="Permanent link to Comparison of a float with a value in C" href="https://www.geeksforgeeks.org/comparison-float-value-c/" rel="bookmark">Comparison of a float with a value in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/need-long-data-type-c-cpp/">Need of long data type in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/size_t-data-type-c-language/">size_t data type in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/interesting-facts-about-data-types-and-modifiers-in-c-cpp/">Interesting facts about data-types and modifiers</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-float-double-c-cpp/">Float and Double in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/character-arithmetic-c-c/">Character arithmetic in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/type-conversion-c/">Typecasting in C</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="StorageClasses"></a>Storage Classes: </strong></p>
+<div class ="StorageClasses">
+<ol>
+<li><a href="http://geeksquiz.com/storage-classes-in-c/">Storage Classes in C</a></li>
+<li><a href="http://geeksquiz.com/static-variables-in-c/">Static Variables in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/understanding-extern-keyword-in-c/">Understanding “extern” keyword in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-53/">What are the default values of static variables in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/understanding-volatile-qualifier-in-c/">Understanding “volatile” qualifier in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/const-qualifier-in-c/">Const Qualifier in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-80/">Initialization of static variables in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/understanding-register-keyword/">Understanding “register” keyword in C</a></li>
+<li><a href="http://geeksquiz.com/c-language-2/storage-classes/" target="_blank">Quiz on Storage Classes in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/understanding-volatile-qualifier-c-set-1-introduction/">Understanding volatile qualifier in C- Set 1</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="InputOutput"></a>Input/Output: </strong></p>
+<div class = "InputOutput">
+<ol>
+<li><a href="https://www.geeksforgeeks.org/g-fact-10/">Returned values of printf() and scanf()</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-11/">What is return type of getchar(), fgetc() and getc() ?</a></li>
+<li><a href="https://www.geeksforgeeks.org/scansets-in-c/">Scansets in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/puts-vs-printf-for-printing-a-string/">puts() vs printf() for printing a string</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-31/">What is use of %n in printf() ?</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-print-using-printf/">How to print % using printf()?</a></li>
+<li><a href="http://geeksquiz.com/c-language-2/input-and-output/" target="_blank">Quiz on Input Output in C</a></li>
+<li><a title="Permanent link to What is the difference between printf, sprintf and fprintf?" href="http://geeksquiz.com/difference-printf-sprintf-fprintf/" rel="bookmark">Difference between printf, sprintf and fprintf?</a></li>
+<li><a title="Permanent link to Difference between getc(), getchar(), getch() and getche()" href="http://geeksquiz.com/difference-getchar-getch-getc-getche/" rel="bookmark">Difference between getc(), getchar(), getch() and getche()</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/">Difference between %d and %i format specifier</a></li>
+<li><a href="https://www.geeksforgeeks.org/use-fflushstdin-c/">Use of fflush(stdin) in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/clearing-the-input-buffer-in-cc/">Clearing input buffer in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/scanf-and-fscanf-in-c-simple-yet-poweful/">scanf() and fscanf() in C </a></li>
+<li><a href="https://www.geeksforgeeks.org/getchar_unlocked-faster-input-cc-competitive-programming/">getchar_unlocked() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/problem-with-scanf-when-there-is-fgetsgetsscanf-after-it/">Problem with scanf()</a></li>
+<li><a href="https://www.geeksforgeeks.org/differentiate-printable-control-character-c/">Differentiate printable and control character</a></li>
+<li><a href="https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/">rand() and srand() in C/C++</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="Operators"></a>Operators: </strong></p>
+<div class = "Operators">
+<ol>
+<li><a href="http://geeksquiz.com/operators-in-c-set-1-arithmetic-operators/">Introduction to operators in C and Arithmetic Operators</a></li>
+<li><a href="http://geeksquiz.com/operators-in-c-set-2-relational-and-logical-operators/">Relational and Logical Operators in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/interesting-facts-bitwise-operators-c/" target="_blank">Bitwise Operators in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-operator-precedence-associativity/">Operator Precedence and Associativity in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/evaluation-order-of-operands/">Evaluation order of operands</a></li>
+<li><a href="https://www.geeksforgeeks.org/comna-in-c-and-c/">Comma in C and C++</a></li>
+<li><a title="Permalink to sizeof operator in C" href="http://geeksquiz.com/sizeof-operator-c/">sizeof operator in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-9/">Operands for sizeof operator</a></li>
+<li><a href="https://www.geeksforgeeks.org/a-comma-operator-question/">A comma operator question</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-78/">Result of comma operator as l-value in C and C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-74/">Order of operands for logical operators</a></li>
+<li><a href="https://www.geeksforgeeks.org/increment-decrement-operators-require-l-value-expression/">Increment (Decrement) operators require L-value Expression</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-59/">Precedence of postfix ++ and prefix ++ in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/modulus-on-negative-numbers/">Modulus on Negative Numbers</a></li>
+<li><a href="https://www.geeksforgeeks.org/cc-ternary-operator-some-interesting-observations/">C/C++ Ternary Operator – Some Interesting Observations</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-40/">Pre-increment (or pre-decrement) in C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-p-p-and-p/">Difference between ++*p, *p++ and *++p</a></li>
+<li><a href="https://www.geeksforgeeks.org/results-of-comparison-operations-in-c-and-c/">Results of comparison operations in C and C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/to-find-sum-of-two-numbers-without-using-any-operator/">To find sum of two numbers without using any operator</a></li>
+<li><a href="https://www.geeksforgeeks.org/sequence-points-in-c-set-1/">Sequence Points in C</a></li>
+<li><a title="Permalink to Execution of printf with ++ operators" href="https://www.geeksforgeeks.org/execution-printf-operators/" rel="bookmark">Execution of printf with ++ operators</a></li>
+<li><a href="https://www.geeksforgeeks.org/anything-written-sizeof-never-executed-c/">Anything written in sizeof() is never executed</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-strlen-sizeof-string-c-reviewed/">Difference between strlen() and sizeof()</a></li>
+<li><a href="https://www.geeksforgeeks.org/and-operators-in-c/">Stringizing and Token-pasting operator</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="Preprocessor"></a>Preprocessor</strong>:</p>
+<div class = "Preprocessor">
+<ol>
+<li><a href="https://www.geeksforgeeks.org/write-a-c-macro-printx-which-prints-x/">Write a C macro PRINT(x) which prints x</a></li>
+<li><a href="https://www.geeksforgeeks.org/variable-length-arguments-for-macros/">Variable length arguments for Macros</a></li>
+<li><a href="https://www.geeksforgeeks.org/multiline-macros-in-c/">Multiline macros in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/crash-macro-interpretation/">CRASH() macro – interpretation</a></li>
+<li><a href="https://www.geeksforgeeks.org/the-offsetof-macro/">The OFFSETOF() macro, </a></li>
+<li><a href="https://www.geeksforgeeks.org/branch-prediction-macros-in-gcc/">Branch prediction macros in GCC</a></li>
+<li><a title="Permanent link to Diffference between #define and const in C?" href="http://geeksquiz.com/diffference-define-const-c/" rel="bookmark">Diffference between #define and const in C?</a></li>
+<li><a title="Permalink to A C Programming Language Puzzle" href="https://www.geeksforgeeks.org/a-c-puzzle/" rel="bookmark">A C Programming Language Puzzle</a></li>
+<li><a title="Permalink to What’s difference between header files “stdio.h” and “stdlib.h” ?" href="http://geeksquiz.com/whats-difference-between-and/" rel="bookmark">What’s difference between header files “stdio.h” and “stdlib.h” ?</a></li>
+<li><a title="Permalink to How to print a variable name in C?" href="http://geeksquiz.com/how-to-print-a-variable-name-in-c/" rel="bookmark">How to print a variable name in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/constants-in-c/">Constants in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/preprocessor-works-c/">How a Preprocessor works</a></li>
+<li><a href="https://www.geeksforgeeks.org/cc-preprocessors/">Preprocessor Directives : Behind the scene-1</a></li>
+<li><a href="https://www.geeksforgeeks.org/cpp-preprocessor-directives-set-2/">Preprocessor Directives : Behind the scene-2</a></li>
+<li><a href="https://www.geeksforgeeks.org/isgraph-c-library-function/">isgraph() library function</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-header-file-c/">write your own header file in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/difftime-c-library-function/">difftime() library function</a></li>
+<li><a href="https://www.geeksforgeeks.org/tmpnam-function-c/">tmpnam() library function</a></li>
+<li><a href="https://www.geeksforgeeks.org/_generic-keyword-c/">_Generic keyword in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-library-math-h-functions/">math.h library functions</a></li>
+<li><a href="https://www.geeksforgeeks.org/typedef-versus-define-c/">typedef versus #define in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/strftime-function-in-c/">strftime() library function</a></li>
+<li><a href="https://www.geeksforgeeks.org/exec-family-of-functions-in-c/">exec family of functions</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="Array&amp;Strings"></a>Arrays &amp; Strings</strong>:</p>
+<div class = "Array&amp;Strings">
+<ol>
+<li><a title="Permalink to Arrays in C Language | Set 1 (Introduction)" href="http://geeksquiz.com/arrays-in-c-language-set-1-introduction/" rel="bookmark">Introduction to Arrays in C Language</a></li>
+<li><a href="https://www.geeksforgeeks.org/strings-in-c-2/">Strings in C Language</a></li>
+<li><a href="http://geeksquiz.com/arrays-in-c-language-set-2-interesting-array-properties/">Properties of array in C Language</a></li>
+<li><a href="https://www.geeksforgeeks.org/using-sizof-operator-with-array-paratmeters/">Do not use sizeof for array parameters</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-92/">Initialization of variables sized arrays in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/are-array-members-deeply-copied/">Are array members deeply copied?</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact/">What is the difference between single quoted and double quoted declaration of char array?</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-44/">Initialization of a multidimensional arrays in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-one-line-functions-for-strcat-and-strcmp/">Write one line functions for strcat() and strcmp()</a></li>
+<li><a href="http://geeksquiz.com/whats-difference-between-char-s-and-char-s-in-c/">What’s difference between char s[] and char *s in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/gets-is-risky-to-use/">gets() is risky to use!</a></li>
+<li><a href="https://www.geeksforgeeks.org/swap-strings-in-c/">C function to Swap strings, </a></li>
+<li><a href="https://www.geeksforgeeks.org/storage-for-strings-in-c/">Storage for Strings in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-pointer-array-c/" target="_blank">Difference between array and pointer</a></li>
+<li><a title="Permanent link to How to dynamically allocate a 2D array in C?" href="https://www.geeksforgeeks.org/dynamically-allocate-2d-array-c/" rel="bookmark">How to dynamically allocate a 2D array in C?</a></li>
+<li><a title="Permanent link to How to pass a 2D array as a parameter in C?" href="https://www.geeksforgeeks.org/pass-2d-array-parameter-c/" rel="bookmark">How to pass a 2D array as a parameter in C?</a></li>
+<li><a title="Permalink to How to write long strings in Multi-lines C/C++?" href="http://geeksquiz.com/how-to-write-long-strings-in-multi-lines-cc/" rel="bookmark">How to write long strings in Multi-lines C/C++?</a></li>
+<li><a title="Permalink to What are the data types for which it is not possible to create an array?" href="http://geeksquiz.com/can-we-have-an-array-of-all-types-in-c/" rel="bookmark">What are the data types for which it is not possible to create an array?</a></li>
+<li><a title="Permalink to Variable Length Arrays in C and C++" href="https://www.geeksforgeeks.org/variable-length-arrays-in-c-and-c/" rel="bookmark">Variable Length Arrays in C and C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/a-shorthand-array-notation-in-c-for-repeated-values/">Short hand array notation</a></li>
+<li><a href="https://www.geeksforgeeks.org/accessing-array-bounds-ccpp/">Accessing array out of bounds</a></li>
+<li><a href="https://www.geeksforgeeks.org/strcpy-in-c-cpp/">strcpy() in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/strcmp-in-c-cpp/">strcmp() in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/strdup-strdndup-functions-c/">strdup() and strdndup() in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/pass-array-value-c/">Pass an array by value</a></li>
+<li><a href="https://www.geeksforgeeks.org/quickly-reverse-string-c/">Reverse a string in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/strpbrk-in-c/">strpbrk() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/strcoll-in-cc/">strcoll() in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/ispunct-function-c/">ispunct() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/strspn-function-c/">strspn() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/isalpha-isdigit-functions-c-example/">isalpha() and isdigit() in C/C++</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="ControlStatements"></a>Control Statements: </strong></p>
+<div class = "ControlStatements">
+<ol>
+<li><a href="https://www.geeksforgeeks.org/g-fact-51/">What should be data type of case labels of switch statement in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/for-versus-while/">For Versus While</a></li>
+<li><a href="https://www.geeksforgeeks.org/a-nested-loop-puzzle/">A nested loop puzzle</a></li>
+<li><a href="https://www.geeksforgeeks.org/interesting-facts-about-switch-statement-in-c/">switch statement in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-while1-while0-c-language/">Difference between while(1) and while(0)</a></li>
+<li><a href="https://www.geeksforgeeks.org/goto-statement-in-c-cpp/">goto statement </a></li>
+<li><a href="https://www.geeksforgeeks.org/continue-statement-cpp/">Continue Statement</a></li>
+<li><a href="https://www.geeksforgeeks.org/break-statement-cc/">Break Statement</a></li>
+<li><a href="https://www.geeksforgeeks.org/using-range-switch-case-cc/">Using range in switch case</a></li>
+</ol>
+</div>
+</div>
+<div style="width: 50%; float: right;">
+<p style="text-align: center;"><strong><a name="Functions"></a>Functions</strong>:</p>
+<div class = "Functions">
+<ol>
+<li><a href="http://geeksquiz.com/functions-in-c/">Functions in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/importance-of-function-prototype-in-c/">Importance of function prototype in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/functions-that-are-executed-before-and-after-main-in-c/">Functions that are executed before and after main() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/return-statement-vs-exit-in-main/">return statement vs exit() in main()</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-count-variable-numbers-of-arguments-in-c/">How to Count Variable Numbers of Arguments in C?, </a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-20/">What is evaluation order of function parameters in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/does-c-support-function-overloading/">Does C support function overloading?</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-can-i-return-multiple-values-from-a-function/">How can we return multiple values from a function?</a></li>
+<li><a href="https://www.geeksforgeeks.org/what-is-the-purpose-of-a-function-prototype/">What is the purpose of a function prototype?</a></li>
+<li><a href="https://www.geeksforgeeks.org/what-are-static-functions-in-c/">Static functions in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/understanding-exit-abort-and-assert/">exit(), abort() and assert()</a></li>
+<li><a href="https://www.geeksforgeeks.org/implicit-return-type-int-c-language/">Implicit return type int in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-95/">What happens when a function is called before its declaration in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/_noreturn-function-specifier-c/">_Noreturn function specifier in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/exit-vs-_exit-c-cpp/">exit() vs _Exit()</a></li>
+<li><a href="https://www.geeksforgeeks.org/predefined-identifier-__func__-c/">__func__ identifier in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/callbacks-in-c/">Callback function in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/nested-functions-c/">Nested functions in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/parameter-passing-techniques-in-c-cpp/">Parameter Passing Techniques</a></li>
+<li><a href="https://www.geeksforgeeks.org/power-function-cc/">pow() function in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/tolower-function-in-c/" rel="noopener" target="_blank">tolower() function in C</a>
+<li><a href="https://www.geeksforgeeks.org/time-function-in-c/" rel="noopener" target="_blank">time() function in C</a>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="Pointers"></a>Pointers</strong>:</p>
+<div class = "Pointers">
+<ol>
+<li><a href="https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/">Introduction to pointers in C and C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/double-pointer-pointer-pointer-c/">Double Pointer (Pointer to Pointer) in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/why-c-treats-array-parameters-as-pointers/">Why C treats array parameters as pointers?</a></li>
+<li><a href="https://www.geeksforgeeks.org/dereference-reference-dereference-reference/">Output of the program | Dereference, Reference, Dereference, Reference</a></li>
+<li><a title="Permalink to Dangling, Void , Null and Wild Pointers" href="https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/" rel="bookmark">Dangling, Void , Null and Wild Pointers</a></li>
+<li><a href="https://www.geeksforgeeks.org/an-uncommon-representation-of-array-elements/">An Uncommon representation of array elements</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-declare-a-pointer-to-a-function/">How to declare a pointer to a function?</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-5/">Pointer vs Array in C</a></li>
+<li><a title="Permanent link to void pointer in C" href="http://geeksquiz.com/void-pointer-c/" rel="bookmark">void pointer in C</a></li>
+<li><a title="Permalink NULL pointer in C !" href="http://geeksquiz.com/few-bytes-on-null-pointer-in-c/" rel="bookmark">NULL pointer in C !</a></li>
+<li><a title="Permanent link to Function Pointer in C" href="https://www.geeksforgeeks.org/function-pointer-in-c/" rel="bookmark">Function Pointer in C</a></li>
+<li><a href="http://geeksquiz.com/what-are-near-far-and-huge-pointers/">near, far and huge pointers</a></li>
+<li><a title="Permanent link to Generic Linked List in C" href="https://www.geeksforgeeks.org/generic-linked-list-in-c-2/" rel="bookmark">Generic Linked List in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/restrict-keyword-c/">restrict keyword in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-const-char-p-char-const-p-const-char-const-p/">const char *p, char * const p and const char * const p</a></li>
+<li><a href="https://www.geeksforgeeks.org/pointer-array-array-pointer/">Pointer to an Array</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><a name="EnumStructandUnion"></a><strong>Enum, Struct and Union</strong>:</p>
+<div class = "EnumStructandUnion">
+<ol>
+<li><a href="http://geeksquiz.com/enumeration-enum-c/" target="_blank">Enum in C</a></li>
+<li><a title="Permanent link to Structures in C" href="http://geeksquiz.com/structures-c/" rel="bookmark">Structures in C</a></li>
+<li><a href="http://geeksquiz.com/union-c/" target="_blank">Union in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/struct-hack/">Struct Hack</a></li>
+<li><a href="https://www.geeksforgeeks.org/structure-member-alignment-padding-and-data-packing/">Structure Member Alignment, Padding and Data Packing</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-68/">Operations on struct variables in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/bit-fields-c/">Bit Fields in C</a></li>
+<li><a title="Permalink to Structure Sorting (By Multiple Rules) in C++" href="https://www.geeksforgeeks.org/structure-sorting-in-c/" rel="bookmark">Structure Sorting (By Multiple Rules) in C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/flexible-array-members-structure-c/">Flexible array members in structure</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-structure-union-c/">Difference between Structure and Union</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-c-structures-c-structures/">Difference between C structures and C++ structures</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-38-anonymous-union-and-structure/">Anonymous Union and Structure in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/compound-literals-c/">Compound Literals in C</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="MemoryManagement"></a>Memory Management</strong>:</p>
+<div class = "MemoryManagement">
+<ol>
+<li><a href="https://www.geeksforgeeks.org/memory-layout-of-c-program/">Memory Layout of C Programs,</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-deallocate-memory-without-using-free-in-c/">How to deallocate memory without using free() in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/calloc-versus-malloc/">calloc() versus malloc()</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-88/">How does free() know the size of memory to be deallocated?</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-66/">Use of realloc()</a></li>
+<li><a href="https://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/">What is Memory Leak? How can we avoid?</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="FileHandling"></a>File Handling</strong>:</p>
+<div class = "FileHandling">
+<ol>
+<li><a href="https://www.geeksforgeeks.org/g-fact-82/">fseek() vs rewind() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/eof-and-feof-in-c/">EOF, getc() and feof() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/fopen-for-an-existing-file-in-write-mode/" target="_blank">fopen() for an existing file in write mode</a></li>
+<li><a href="https://www.geeksforgeeks.org/readwrite-structure-file-c/">Read/Write structure to a file</a></li>
+<li><a href="https://www.geeksforgeeks.org/fgets-gets-c-language/">fgets() and gets() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/basics-file-handling-c/">Basics of File Handling</a></li>
+<li><a href="https://www.geeksforgeeks.org/fsetpos-set-file-position-in-c/">fsetpos() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/rename-function-in-ccpp/">rename function in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/tmpfile-function-c/">tmpfile() function in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/fgetc-fputc-c/">fgetc() and fputc() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/fseek-in-c-with-example/">fseek() in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/ftell-c-example/">ftell() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/lseek-in-c-to-read-the-alternate-nth-byte-and-write-it-in-another-file/">lseek() in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-program-delete-file/">remove function in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-program-merge-contents-two-files-third-file/">Merge contents of two files into a third file</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-program-print-contents-file/">Print contents of file in C</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="Puzzles"></a>Puzzles</strong>:</p>
+<div class = "Puzzles">
+<ol>
+<li><a href="http://geeksquiz.com/c-program-to-print-numbers-from-1-to-n-without-using-semicolon/">C Program to print numbers from 1 to N without using semicolon?</a></li>
+<li><a href="https://www.geeksforgeeks.org/to-find-sum-of-two-numbers-without-using-any-operator/">How to find sum of two numbers without using any operator</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-will-you-show-memory-representation-of-c-variables/">How will you show memory representation of C variables?</a></li>
+<li><a href="https://www.geeksforgeeks.org/condition-to-print-helloword/">Condition To Print “HelloWord”</a></li>
+<li><a href="https://www.geeksforgeeks.org/changeadd-only-one-character-and-print-exactly-20-times/">Change/add only one character and print ‘*’ exactly 20 times</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-can-we-sum-the-digits-of-a-given-number-in-single-statement/">How can we sum the digits of a given number in single statement?</a></li>
+<br/>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- post_top_responsive -->
+          <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-9465609616171866"
+          data-ad-slot="4501693235"
+          data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <br/>
+            
+<li><a href="https://www.geeksforgeeks.org/what-is-the-best-way-in-c-to-convert-a-number-to-a-string/">What is the best way in C to convert a number to a string?</a></li>
+<li><a href="https://www.geeksforgeeks.org/calculate-logn-in-one-line/">Calculate Logn in one line</a></li>
+<li><a href="https://www.geeksforgeeks.org/even-or-odd-without-using-condtional-statement/">Print “Even” or “Odd” without using Conditional statement</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-will-you-print-numbers-from-1-to-200-without-using-loop/">How will you print numbers from 1 to 100 without using loop?</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-can-we-sum-the-digits-of-a-given-number-in-single-statement/">How can we sum the digits of a given number in single statement?</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-a-c-program-to-print-geeks-for-geeks-without-using-a-semicolon/">How will you print “Geeks for Geeks” without using a semicolon</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-a-c-function-to-round-floating-point-numbers/">Write a one line C function to round floating point numbers</a></li>
+<li><a href="https://www.geeksforgeeks.org/implement-your-own-sizeof/">How will implement Your Own sizeof</a></li>
+<li><a href="https://www.geeksforgeeks.org/count-set-bits-floating-point-number/">How to count set bits in a floating point number in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-puzzle/">How to change the output of printf() in main() ?</a></li>
+<li><a href="https://www.geeksforgeeks.org/find-length-string-without-strlen-loop/">How to find length of a string without string.h and loop in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/implement-itoa/">Implement your own itoa()</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-a-c-program-that-doesnt-terminate-when-ctrlc-is-pressed/">Write a C program that does not terminate when Ctrl+C is pressed</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-program-in-c/">How to measure time taken by a function in C?</a></li>
+<li><a href="https://www.geeksforgeeks.org/print-long-int-number-c-using-putchar/" target="_blank">Print a long int in C using putchar() only</a></li>
+<li><a title="Permanent link to Convert a floating point number to string in C" href="https://www.geeksforgeeks.org/convert-floating-point-number-string/" rel="bookmark">Convert a floating point number to string in C</a></li>
+<li><a title="Permanent link to How to write a running C code without main()?" href="https://www.geeksforgeeks.org/write-running-c-code-without-main/" rel="bookmark">How to write a running C code without main()?</a></li>
+<li><a title="Permanent link to Write your own memcpy()" href="https://www.geeksforgeeks.org/write-memcpy/" rel="bookmark">Write your own memcpy()</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-program-print-characters-without-using-format-specifiers/">C program to print characters without using format specifiers</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-program-print-string-without-quote-singe-double-program/">C program to print a string without any quote (singe or double) in the program</a></li>
+<li><a href="https://www.geeksforgeeks.org/execute-else-statements-cc-simultaneously/">Execute both if and else statements simultaneously</a></li>
+<li><a href="https://www.geeksforgeeks.org/print-hello-world-c-without-using-header-file/">Print “Hello World” without using any header file</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="Misc"></a>Misc</strong>:</p>
+<div class = "Misc">
+<ol>
+<li><a href="https://www.geeksforgeeks.org/quine-a-self-reproducing-program/">Quine – A self-reproducing program</a></li>
+<li><a href="https://www.geeksforgeeks.org/complicated-declarations-in-c/">Complicated declarations in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-94/">Use of bool in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/sequence-points-in-c-set-1/">Sequence Points in C | Set 1</a></li>
+<li><a href="https://www.geeksforgeeks.org/optimization-techniques-set-2-swapping/">Optimization Techniques | Set 2 (swapping), </a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-72/">ASCII NUL, ASCII 0 (’0?) and Numeric literal 0</a></li>
+<li><a href="https://www.geeksforgeeks.org/little-and-big-endian-mystery/">Little and Big Endian Mystery, </a></li>
+<li><a href="https://www.geeksforgeeks.org/comparator-function-of-qsort-in-c/">Comparator function of qsort() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/program-to-validate-an-ip-address/">Program to validate an IP address</a></li>
+<li><a title="Permanent link to Multithreading in C" href="https://www.geeksforgeeks.org/multithreading-c-2/" rel="bookmark">Multithreading in C</a></li>
+<li><a title="Permanent link to Assertions in C/C++" href="http://geeksquiz.com/assertions-cc/" rel="bookmark">Assertions in C/C++</a></li>
+<li><a href="http://geeksquiz.com/fork-system-call/">fork() in C</a></li>
+<li><a title="Permalink to Interesting Facts in C Programming" href="https://www.geeksforgeeks.org/interesting-facts-in-c-programming/" rel="bookmark">Interesting Facts in C Programming</a></li>
+<li><a title="Permalink to Precision of floating point numbers in C++ (floor(), ceil(), trunc(), round() and setprecision())" href="https://www.geeksforgeeks.org/precision-of-floating-point-numbers-in-c-floor-ceil-trunc-round-and-setprecision/" rel="bookmark">Precision of floating point numbers in C++ (floor(), ceil(), trunc(), round() and setprecision())</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact22-concept-of-setjump-and-longjump/">setjump() and longjump() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/g-fact-37-nextafter-nexttoward-c/">nextafter() and nexttoward() in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/pthread_cancel-c-example/">pthread_cancel() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/pthread_equal-c-example/">pthread_equal() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/pthread_self-c-example/">pthread_self() in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/local-labels-in-c/">Local Labels in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/lvalue-and-rvalue-in-c-language/">lvalue and rvalue in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/get-stack-size-set-stack-size-thread-attribute-c/">Get and set the stack size of thread attribute</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-fork-exec/">Difference between fork() and exec()</a></li>
+<li><a href="https://www.geeksforgeeks.org/errors-in-cc/">Errors in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/c-considered-faster-languages/">Why is C considered faster than other languages</a></li>
+<li><a href="https://www.geeksforgeeks.org/incompatibilities-between-c-and-cpp/"> Incompatibilities between C and C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/convert-cc-code-to-assembly-language/">Convert C/C++ code to assembly language</a></li>
+<li><a href="https://www.geeksforgeeks.org/error-handling-c-programs/">Error Handling in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/executing-main-in-c-behind-the-scene/">Executing main() in C/C++ : Behind the scene</a></li>
+<li><a href="https://www.geeksforgeeks.org/hygienic-macros-introduction/">Hygienic Macros in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/">Command line arguments in C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/scanf-fscanf-sscanf-scanf_s-fscanf_s-sscanf_s/">scanf(), fscanf(), sscanf(), scanf_s(), fscanf_s(), sscanf_s()</a></li>
+<li><a href="https://www.geeksforgeeks.org/interesting-facts-in-c-programming/">Some Interesting Facts in C Programming</a></li>
+<li><a href="https://www.geeksforgeeks.org/database-connectivity-using-cc/">Database Connectivity using C/C++</a></li>
+<li><a href="https://www.geeksforgeeks.org/function-interposition-in-c-with-an-example-of-user-defined-malloc/">Function Interposition in C</a></li>
+<li><a href="https://www.geeksforgeeks.org/macros-vs-functions/">Macros vs Functions</a></li>
+<li><a href="https://www.geeksforgeeks.org/write-memcpy/">Write your own memcpy() and memmove()</a></li>
+</ol>
+</div>
+<p style="text-align: center;"><strong><a name="CLanguageInterviewQuestions"></a>C Language Interview Questions </strong></p>
+<div class  = "CLanguageInterviewQuestions">
+<ul>
+<li><a title="Permanent link to Commonly Asked C Programming Interview Questions | Set 1" href="http://geeksquiz.com/commonly-asked-c-programming-interview-questions-set-1/" rel="bookmark">Commonly Asked C Programming Interview Questions | Set 1</a></li>
+<li><a title="Permanent link to Commonly Asked C Programming Interview Questions | Set 2" href="http://geeksquiz.com/commonly-asked-c-programming-interview-questions-set-2/" rel="bookmark">Commonly Asked C Programming Interview Questions | Set 2</a></li>
+</ul>
+</div>
+</div>
+<p><strong><a href="https://www.geeksforgeeks.org/cc-programs/" target="_blank">C/C++ Programs</a></strong></p>
+<p><a href="https://practice.geeksforgeeks.org/">Coding Practice Platform</a></p>
+<p>&nbsp;</p>
+<br/><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- post_bottom_responsive -->
+          <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-9465609616171866"
+          data-ad-slot="8385097921"
+          data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+          <br/>
+            <div id="personalNoteDiv" class="clear hideIt">
+    <div class="personalNoteHeader clear">
+        <span class="noteHeaderText">My Personal Notes</span>
+        <span class="hideNotesDivIcon"><i class="material-icons personalNotesIcon">arrow_drop_up</i></span>
+    </div>
+    <div class="collapsableDivPersonalNotes">
+        <textarea maxlength="5000" id="enteredPersonalNote" class="personalNoteStyle" placeholder="Add your personal notes here! (max 5000 chars)" ></textarea>
+        <div class="saveNoteDiv">
+            <span class="processSaveNote"></span>
+            <button class="savePersonalNoteButton" onclick="saveUserPersonalNote()">Save</button>
+        </div>
+    </div>
+</div>			
+
+		</div><!-- .entry-content -->
+		<footer class="entry-meta">
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+	<footer class="entry-meta">
+	
+
+	<div id="share-buttons" style="display:none">
+   
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://www.geeksforgeeks.org/c-programming-language/" target="_blank" title="Share on Facebook">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=https://www.geeksforgeeks.org/c-programming-language/" target="_blank" title="Share on Google">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.geeksforgeeks.org/c-programming-language/" target="_blank" title="Share on LinkedIn">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://www.geeksforgeeks.org/c-programming-language/&amp;text=C Programming Language&amp;hashtags=GeeksforGeeks" target="_blank" title="Share on Twitter">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/twitter.png" alt="Twitter" />
+    </a>
+
+    <!-- Pinterest -->
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" title="Share on Pinterest">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/pinterest.png" alt="Pinterest" />
+    </a>
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=https://www.geeksforgeeks.org/c-programming-language/&amp;title=C Programming Language" target="_blank" title="Share on Reddit">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/reddit.png" alt="Reddit" />
+    </a>
+    
+    <!-- StumbleUpon-->
+    <a href="http://www.stumbleupon.com/submit?url=https://www.geeksforgeeks.org/c-programming-language/&amp;title=C Programming Language" target="_blank" title="Share on StumbleUpon">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/stumbleupon.png" alt="StumbleUpon" />
+    </a>
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=https://www.geeksforgeeks.org/c-programming-language/&amp;title=C Programming Language" target="_blank" title="Share on Tumblr">
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/tumblr.png" alt="Tumblr" />
+    </a>
+   
+	</div>
+
+	<br></br>
+	<p>Writing code in comment? Please use <a href="https://ide.geeksforgeeks.org/">ide.geeksforgeeks.org</a>, generate link and share the link here.</a></p>
+	<br/>
+	<div style="display:flex">
+		<button id="comment" class="action-button" style="width:45%;cursor: pointer;margin-right:10%;box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0);border-color: #4cb96b;border-radius: 4px;">Load Comments</button>
+		<button id="share" class="action-button" onclick="document.getElementById('share-buttons').style.display='block';this.style.display='none';" style="width:45%;cursor: pointer;margin-right:10%;box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0);border-color: #4cb96b;border-radius: 4px;">Share this post !</button>
+
+	</div>
+
+        <div id="disqus_thread"></div>
+
+					</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<script>jQuery(document).ready(function($){$('#comment').on('click',function(){$.ajax({type:"GET",url:"http://geeksforgeeks.disqus.com/embed.js",dataType:"script",cache:!0});$(this).fadeOut()});if(window.location.href.indexOf('#comment') > -1){jQuery('#comment').click();}});</script>
+
+<style type="text/css">
+ 
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+#share-buttons a:hover {
+	text-decoration: none;
+}
+</style>
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="text-11" class="widget widget_text">			<div class="textwidget"><p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-9465609616171866"
+     data-ad-slot="4402736037"></ins><br />
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+</div>
+		</aside>        
+            <div class="rightSideBarParent">
+            <div class="leftSideBar rightSideBar">
+            <div class="rightbar_lefthead"> </div>
+            <div class="rightbar_head">Most Popular Articles</div>
+            <div class="rightbar_righthead"> </div>
+            <ul class="leftBarList">
+            <li><a href='https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/' target='_blank'>Largest Sum Contiguous Subarray</a></li><li><a href='https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/' target='_blank'>Tree Traversals (Inorder, Preorder and Postorder)</a></li><li><a href='https://www.geeksforgeeks.org/reverse-a-linked-list/' target='_blank'>Reverse a linked list</a></li><li><a href='https://www.geeksforgeeks.org/array-rotation/' target='_blank'>Program for array rotation</a></li><li><a href='https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/' target='_blank'>Longest Increasing Subsequence | DP-3</a></li>            </ul>
+            </div>
+            </div><br>
+            <aside id="text-4" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ResponsiveRightBarMay16 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9465609616171866"
+     data-ad-slot="7089558833"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</aside>            <div class="rightSideBarParent">
+             <div class="leftSideBar rightSideBar"> <div class="rightbar_lefthead"> </div><div class="rightbar_head">Most Visited Articles</div><div class="rightbar_righthead"> </div>
+            <ul class="leftBarList">
+            <li><a href='https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/' target='_blank'>Longest Common Subsequence | DP-4</a></li><li><a href='https://www.geeksforgeeks.org/coin-change-dp-7/' target='_blank'>Coin Change | DP-7</a></li><li><a href='https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/' target='_blank'>Depth First Search or DFS for a Graph</a></li><li><a href='https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/' target='_blank'>Breadth First Search or BFS for a Graph</a></li><li><a href='https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/' target='_blank'>0-1 Knapsack Problem | DP-10</a></li>            </ul>
+            </div>
+            </div><br> <aside id="text-7" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- GfGSideBottomResponsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9465609616171866"
+     data-ad-slot="5749413230"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</aside><aside id="text-6" class="widget widget_text">			<div class="textwidget"></div>
+		</aside>            <div class="rightSideBarParent">
+             <div class="leftSideBar rightSideBar"> <div class="rightbar_lefthead"> </div><div class="rightbar_head">Most Trending Articles</div><div class="rightbar_righthead"> </div>
+            <ul class="leftBarList">
+            <li><a href='https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/' target='_blank'>Dijkstra's shortest path algorithm | Greedy Algo-7</a></li><li><a href='https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/' target='_blank'>Top 10 algorithms in Interview Questions</a></li><li><a href='https://www.geeksforgeeks.org/insertion-sort/' target='_blank'>Insertion Sort</a></li><li><a href='https://www.geeksforgeeks.org/merge-sort/' target='_blank'>Merge Sort</a></li><li><a href='https://www.geeksforgeeks.org/quick-sort/' target='_blank'>QuickSort</a></li><li><a href='https://www.geeksforgeeks.org/heap-sort/' target='_blank'>HeapSort</a></li><li><a href='https://www.geeksforgeeks.org/binary-search/' target='_blank'>Binary Search</a></li><li><a href='https://www.geeksforgeeks.org/selection-sort/' target='_blank'>Selection Sort</a></li><li><a href='https://www.geeksforgeeks.org/bubble-sort/' target='_blank'>Bubble Sort</a></li><li><a href='https://www.geeksforgeeks.org/binary-heap/' target='_blank'>Binary Heap</a></li><li><a href='https://www.geeksforgeeks.org/linked-list-set-1-introduction/' target='_blank'>Linked List | Set 1 (Introduction)</a></li><li><a href='https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/' target='_blank'>Linked List | Set 2 (Inserting a node)</a></li><li><a href='https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/' target='_blank'>Must Do Coding Questions for Companies like Amazon, Microsoft, Adobe, ...</a></li><li><a href='https://www.geeksforgeeks.org/must-coding-questions-company-wise/' target='_blank'>Must Do Coding Questions Company-wise</a></li><li><a href='https://www.geeksforgeeks.org/practice-for-cracking-any-coding-interview/' target='_blank'>Practice for cracking any coding interview</a></li>            </ul>
+            </div>
+            </div><br> 		</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+  <footer>
+    <div id="container-g4g-footer">
+
+        <div id="footer">
+            <div class="logo">
+                <ul class="gfg-logo-ul">
+                    <li>
+                      <a href="https://www.geeksforgeeks.org/">
+                        <img src="https://d3qt53jevtbvi2.cloudfront.net/common/GeeksforGeeksLogoFooterSmall.png" alt="GeeksforGeeks">
+                      </a>
+                    </li>
+                </ul>
+                <ul class="social-ul">
+                    <li>710-B, Advant Navis Business Park,</li>
+                    <li>Sector-142, Noida, Uttar Pradesh - 201305</li>
+        <li>feedback@geeksforgeeks.org</li>
+                </ul>
+                
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><b>COMPANY</b></li>
+                    <li><a href="https://www.geeksforgeeks.org/about/">About Us</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/careers/">Careers</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/about/contact-us/">Contact Us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <ul>
+                    <li><b>LEARN</b></li>
+                    <li><a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">Algorithms</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/data-structures/">Data Structures</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/category/program-output/">Languages</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/articles-on-computer-science-subjects-gq/">CS Subjects</a></li>
+                    <li><a href="https://www.youtube.com/geeksforgeeksvideos/">Video Tutorials</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <li><b>PRACTICE</b></li>
+                    <li><a href="https://practice.geeksforgeeks.org/company-tags/">Company-wise</a></li>
+                    <li><a href="https://practice.geeksforgeeks.org/topic-tags/">Topic-wise</a></li>
+                    <li><a href="https://practice.geeksforgeeks.org/contests/">Contests</a></li>
+                    <li><a href="https://practice.geeksforgeeks.org/subjective-page.php">Subjective Questions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <li><b>CONTRIBUTE</b>
+                    <li><a href="https://www.geeksforgeeks.org/contribute/">Write an Article</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/write-interview-experience/">Write Interview Experience</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/internship/">Internships</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/how-to-contribute-videos-to-geeksforgeeks/">Videos</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom-div footer-bottom-social">
+    <ul class="social-ul" style="padding-left: 0px;">
+                    <li>
+                        <a class="social-link" href="https://www.facebook.com/GeeksforGeeks-316764689022/timeline/"><div class="social-img-div"></div></a>
+                        <a class="social-link" href="https://in.linkedin.com/company/geeksforgeeks"><div class="social-img-div"></div></a>
+                        <a class="social-link" href="https://play.google.com/store/apps/details?id=free.programming.programming&amp;hl=en"><div class="social-img-div"></div></a>
+                        <a class="social-link" href="https://twitter.com/geeksforgeeks"><div class="social-img-div"></div></a>
+                        <a class="social-link" href="https://www.youtube.com/geeksforgeeksvideos"><div class="social-img-div"></div></a>
+                    </li>
+                </ul>
+  </div>
+  <div class="footer-bottom-div">
+            @geeksforgeeks, <a style="color:#fff !important" href="https://creativecommons.org/licenses/by-sa/4.0/">Some rights reserved</a>
+        </div>
+
+    </div>
+</footer>
+</div><!-- #page -->
+
+<script type='text/javascript' src='https://www.geeksforgeeks.org/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+
+<style>
+.eventLink{
+border: 1px solid #868686;
+background-color: #e0e0e0;
+padding: 10px;
+box-shadow: none;
+display: block;
+text-align: center;
+color: #555 !important;
+font-size: 14px;
+font-weight: bold;
+}
+</style>
+
+<script type="text/javascript">
+// below changes to be added in gfg.js in future.
+// load comment button click when page scroll to it and positioned ad in mobile view.
+flag=0;jQuery(window).scroll(function(){if(jQuery('#comment').length !=0 ){var hT=jQuery('#comment').offset().top,hH=jQuery('#comment').outerHeight(),wH=jQuery(window).height(),wS=jQuery(this).scrollTop();if(wS>(hT+hH-wH-70)&&!flag){jQuery('#comment').click();flag=1}}});
+/*var temp_width=jQuery(window).width();if(temp_width<468){if(jQuery('article').length>1){jQuery(jQuery('.responsiveAd')).insertAfter('article:eq(2)');jQuery('.rectangleAd').hide()}
+else if(jQuery('#practiceLinkDiv').length>0){jQuery(jQuery('.responsiveAd')).insertAfter('#practiceLinkDiv');jQuery('.rectangleAd').css('width','')}else{jQuery('.responsiveAd').hide();jQuery('.rectangleAd').css('width','')}}
+*/
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12148232-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript" src="//m.servedby-buysellads.com/monetization.js"></script>
+<script>
+(function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('fancybar', 'C6ADVKE', 'placement:geeksforgeeks');
+    }
+})();
+</script>
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.193 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-12-01 00:41:25 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->
